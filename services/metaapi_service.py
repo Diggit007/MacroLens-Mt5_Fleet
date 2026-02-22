@@ -18,6 +18,8 @@ _CRED_CACHE = {}
 async def _get_credentials(account_id: str):
     """Fetch MT5 credentials from Firestore (mt5_accounts collection)"""
     if account_id in _CRED_CACHE:
+        if _CRED_CACHE[account_id] is None:
+            raise Exception(f"Account {account_id} not found in Firestore (Cached)")
         return _CRED_CACHE[account_id]
         
     try:
@@ -35,6 +37,7 @@ async def _get_credentials(account_id: str):
                 data = docs[0].to_dict()
                 
         if not data:
+            _CRED_CACHE[account_id] = None # Cache the missing status
             raise Exception(f"Account {account_id} not found in Firestore")
             
         login = data.get("login")
@@ -42,6 +45,7 @@ async def _get_credentials(account_id: str):
         server = data.get("server")
         
         if not login or not password or not server:
+            _CRED_CACHE[account_id] = None
             raise Exception(f"Missing login credentials for account {account_id} in DB")
             
         creds = {"login": str(login), "password": password, "server": server}
@@ -49,7 +53,8 @@ async def _get_credentials(account_id: str):
         return creds
         
     except Exception as e:
-        logger.error(f"Failed to fetch credentials for {account_id}: {e}")
+        if "Cached" not in str(e): # Only log the first time it fails
+            logger.error(f"Failed to fetch credentials for {account_id}: {e}")
         raise
 
 async def get_account(account_id: str):
@@ -211,7 +216,8 @@ async def get_symbol_price(account_id, symbol):
             }
         return {"bid": 0, "ask": 0, "symbol": resolved_symbol}
     except Exception as e:
-        logger.error(f"Fetch Price Error: {e}")
+        if "Cached" not in str(e):
+            logger.error(f"Fetch Price Error: {e}")
         return {"bid": 0, "ask": 0, "symbol": symbol}
 
 async def fetch_candles(account_id, symbol, timeframe="1h", limit=500):
