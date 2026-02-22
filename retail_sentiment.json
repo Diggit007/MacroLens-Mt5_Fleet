@@ -1,0 +1,578 @@
+[
+  {
+    "symbol": "EURUSD",
+    "long_pct": 57,
+    "short_pct": 43,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (57%)"
+  },
+  {
+    "symbol": "GBPUSD",
+    "long_pct": 56,
+    "short_pct": 44,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (56%)"
+  },
+  {
+    "symbol": "USDJPY",
+    "long_pct": 47,
+    "short_pct": 53,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Short dominance (53%)"
+  },
+  {
+    "symbol": "GBPJPY",
+    "long_pct": 54,
+    "short_pct": 46,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Long dominance (54%)"
+  },
+  {
+    "symbol": "USDCAD",
+    "long_pct": 60,
+    "short_pct": 40,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (60%)"
+  },
+  {
+    "symbol": "EURAUD",
+    "long_pct": 82,
+    "short_pct": 18,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (82%)"
+  },
+  {
+    "symbol": "EURJPY",
+    "long_pct": 31,
+    "short_pct": 69,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (69%)"
+  },
+  {
+    "symbol": "AUDCAD",
+    "long_pct": 18,
+    "short_pct": 82,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (82%)"
+  },
+  {
+    "symbol": "AUDJPY",
+    "long_pct": 18,
+    "short_pct": 82,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (82%)"
+  },
+  {
+    "symbol": "AUDNZD",
+    "long_pct": 9,
+    "short_pct": 91,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (91%)"
+  },
+  {
+    "symbol": "AUDUSD",
+    "long_pct": 15,
+    "short_pct": 85,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (85%)"
+  },
+  {
+    "symbol": "CADJPY",
+    "long_pct": 52,
+    "short_pct": 48,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Long dominance (52%)"
+  },
+  {
+    "symbol": "EURCAD",
+    "long_pct": 50,
+    "short_pct": 50,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Short dominance (50%)"
+  },
+  {
+    "symbol": "EURCHF",
+    "long_pct": 91,
+    "short_pct": 9,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (91%)"
+  },
+  {
+    "symbol": "EURCZK",
+    "long_pct": 0,
+    "short_pct": 100,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (100%)"
+  },
+  {
+    "symbol": "EURGBP",
+    "long_pct": 31,
+    "short_pct": 69,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (69%)"
+  },
+  {
+    "symbol": "EURHUF",
+    "long_pct": 38,
+    "short_pct": 62,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (62%)"
+  },
+  {
+    "symbol": "EURNOK",
+    "long_pct": 98,
+    "short_pct": 2,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (98%)"
+  },
+  {
+    "symbol": "EURNZD",
+    "long_pct": 44,
+    "short_pct": 56,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (56%)"
+  },
+  {
+    "symbol": "EURPLN",
+    "long_pct": 17,
+    "short_pct": 83,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (83%)"
+  },
+  {
+    "symbol": "EURSEK",
+    "long_pct": 33,
+    "short_pct": 67,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (67%)"
+  },
+  {
+    "symbol": "EURTRY",
+    "long_pct": 33,
+    "short_pct": 67,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (67%)"
+  },
+  {
+    "symbol": "GBPCAD",
+    "long_pct": 59,
+    "short_pct": 41,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (59%)"
+  },
+  {
+    "symbol": "GBPCHF",
+    "long_pct": 93,
+    "short_pct": 7,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (93%)"
+  },
+  {
+    "symbol": "NZDCAD",
+    "long_pct": 41,
+    "short_pct": 59,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (59%)"
+  },
+  {
+    "symbol": "NZDJPY",
+    "long_pct": 49,
+    "short_pct": 51,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Short dominance (51%)"
+  },
+  {
+    "symbol": "NZDUSD",
+    "long_pct": 48,
+    "short_pct": 52,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Short dominance (52%)"
+  },
+  {
+    "symbol": "USDCHF",
+    "long_pct": 80,
+    "short_pct": 20,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (80%)"
+  },
+  {
+    "symbol": "USDCZK",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "USDHUF",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "USDMXN",
+    "long_pct": 59,
+    "short_pct": 41,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (59%)"
+  },
+  {
+    "symbol": "USDNOK",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "USDPLN",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "USDSEK",
+    "long_pct": 59,
+    "short_pct": 41,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (59%)"
+  },
+  {
+    "symbol": "USDSGD",
+    "long_pct": 93,
+    "short_pct": 7,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (93%)"
+  },
+  {
+    "symbol": "USDTHB",
+    "long_pct": 96,
+    "short_pct": 4,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (96%)"
+  },
+  {
+    "symbol": "USDTRY",
+    "long_pct": 99,
+    "short_pct": 1,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (99%)"
+  },
+  {
+    "symbol": "USDZAR",
+    "long_pct": 41,
+    "short_pct": 59,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (59%)"
+  },
+  {
+    "symbol": "CHFJPY",
+    "long_pct": 16,
+    "short_pct": 84,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (84%)"
+  },
+  {
+    "symbol": "AUDCHF",
+    "long_pct": 34,
+    "short_pct": 66,
+    "signal": "BUY",
+    "strength": "Moderate",
+    "bias": "Short dominance (66%)"
+  },
+  {
+    "symbol": "GBPNZD",
+    "long_pct": 86,
+    "short_pct": 14,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (86%)"
+  },
+  {
+    "symbol": "NZDCHF",
+    "long_pct": 80,
+    "short_pct": 20,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (80%)"
+  },
+  {
+    "symbol": "XAGUSD",
+    "long_pct": 56,
+    "short_pct": 44,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (56%)"
+  },
+  {
+    "symbol": "XAUUSD",
+    "long_pct": 60,
+    "short_pct": 40,
+    "signal": "SELL",
+    "strength": "Moderate",
+    "bias": "Long dominance (60%)"
+  },
+  {
+    "symbol": "CADCHF",
+    "long_pct": 86,
+    "short_pct": 14,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (86%)"
+  },
+  {
+    "symbol": "GBPAUD",
+    "long_pct": 81,
+    "short_pct": 19,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (81%)"
+  },
+  {
+    "symbol": "SGDJPY",
+    "long_pct": 14,
+    "short_pct": 86,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (86%)"
+  },
+  {
+    "symbol": "GBPNOK",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "EURZAR",
+    "long_pct": 6,
+    "short_pct": 94,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (94%)"
+  },
+  {
+    "symbol": "AUDSGD",
+    "long_pct": 14,
+    "short_pct": 86,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (86%)"
+  },
+  {
+    "symbol": "GBPSEK",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "CHFSGD",
+    "long_pct": 1,
+    "short_pct": 99,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (99%)"
+  },
+  {
+    "symbol": "EURSGD",
+    "long_pct": 52,
+    "short_pct": 48,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Long dominance (52%)"
+  },
+  {
+    "symbol": "GBPSGD",
+    "long_pct": 87,
+    "short_pct": 13,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (87%)"
+  },
+  {
+    "symbol": "XAUGBP",
+    "long_pct": 54,
+    "short_pct": 46,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Long dominance (54%)"
+  },
+  {
+    "symbol": "NOKJPY",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "ZARJPY",
+    "long_pct": 98,
+    "short_pct": 2,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (98%)"
+  },
+  {
+    "symbol": "GBPTRY",
+    "long_pct": 0,
+    "short_pct": 100,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (100%)"
+  },
+  {
+    "symbol": "USDRUB",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "SEKJPY",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "EURMXN",
+    "long_pct": 0,
+    "short_pct": 100,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (100%)"
+  },
+  {
+    "symbol": "XAUAUD",
+    "long_pct": 50,
+    "short_pct": 50,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Short dominance (50%)"
+  },
+  {
+    "symbol": "XAUEUR",
+    "long_pct": 29,
+    "short_pct": 71,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (71%)"
+  },
+  {
+    "symbol": "XAUJPY",
+    "long_pct": 93,
+    "short_pct": 7,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (93%)"
+  },
+  {
+    "symbol": "XAUCHF",
+    "long_pct": 94,
+    "short_pct": 6,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (94%)"
+  },
+  {
+    "symbol": "GBPMXN",
+    "long_pct": 0,
+    "short_pct": 100,
+    "signal": "BUY",
+    "strength": "Strong",
+    "bias": "Short dominance (100%)"
+  },
+  {
+    "symbol": "XAGAUD",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "NOKSEK",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "XAGEUR",
+    "long_pct": 92,
+    "short_pct": 8,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (92%)"
+  },
+  {
+    "symbol": "XPTUSD",
+    "long_pct": 52,
+    "short_pct": 48,
+    "signal": "NEUTRAL",
+    "strength": "Weak",
+    "bias": "Long dominance (52%)"
+  },
+  {
+    "symbol": "XPDUSD",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  },
+  {
+    "symbol": "USDCNH",
+    "long_pct": 100,
+    "short_pct": 0,
+    "signal": "SELL",
+    "strength": "Strong",
+    "bias": "Long dominance (100%)"
+  }
+]

@@ -1,0 +1,1544 @@
+2026-01-31 10:23:32,002 - MasterUpdater - INFO - [START] STARTING PARALLEL MARKET DATA UPDATE
+2026-01-31 10:23:32,003 - MasterUpdater - INFO - Database Target: C:\MacroLens\backend\market_data.db
+2026-01-31 10:23:32,004 - MasterUpdater - INFO - [TASK] Starting Economic Calendar Update...
+2026-01-31 10:23:32,014 - CalendarScraper - INFO - Fetching calendar from https://sslecal2.forexprostools.com/...
+2026-01-31 10:23:32,185 - MasterUpdater - INFO - [TASK] Starting MarcToMarket News Update...
+2026-01-31 10:23:32,190 - MarcToMarketScraper - INFO - Starting MarcToMarket Crawl...
+2026-01-31 10:23:32,395 - MasterUpdater - INFO - [TASK] Starting Retail Sentiment Update...
+2026-01-31 10:23:32,396 - RetailSentimentAgent - INFO - Crawling https://www.myfxbook.com/community/outlook...
+2026-01-31 10:23:32,484 - MasterUpdater - INFO - [TASK] Starting Institutional Researcher (Deep Dive)...
+2026-01-31 10:23:32,489 - InstitutionalResearcher - INFO - Initializing Institutional Researcher (Crawl4AI)...
+2026-01-31 10:23:32,490 - InstitutionalResearcher - INFO - Crawling FXStreet Banks: https://www.fxstreet.com/news?dFR%5BCategory%5D%5B0%5D=News&dFR%5BTags%5D%5B0%5D=Banks
+2026-01-31 10:23:32,576 - MasterUpdater - INFO - [TASK] Starting Sentiment History Miner...
+2026-01-31 10:23:32,583 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/EURUSD...
+2026-01-31 10:23:59,619 - MarcToMarketScraper - INFO - Found 7 recent posts.
+2026-01-31 10:23:59,620 - MarcToMarketScraper - INFO - Processing: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:24:07,866 - CalendarScraper - INFO - Found 679 rows in calendar table.
+2026-01-31 10:24:07,875 - CalendarScraper - INFO - Processing Date: 2026-01-26
+2026-01-31 10:24:07,881 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 10:24:07,883 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 10:24:07,947 - CalendarScraper - INFO - Processing Date: 2026-01-27
+2026-01-31 10:24:08,014 - CalendarScraper - INFO - Processing Date: 2026-01-28
+2026-01-31 10:24:08,052 - CalendarScraper - INFO - Processing Date: 2026-01-29
+2026-01-31 10:24:08,191 - CalendarScraper - INFO - Processing Date: 2026-01-30
+2026-01-31 10:24:08,316 - CalendarScraper - INFO - Processing Date: 2026-01-31
+2026-01-31 10:24:08,327 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,328 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,329 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,330 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,331 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,331 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,332 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,332 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,332 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,332 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,333 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,334 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,334 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,335 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,335 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,335 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,336 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,336 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,337 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,337 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,337 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,337 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,338 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,338 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,339 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,340 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,347 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,348 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,348 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,348 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,349 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,350 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,350 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,351 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,353 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,355 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,355 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,356 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,356 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,357 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,358 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,359 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,362 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,363 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,365 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,368 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,502 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,614 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,685 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,698 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,700 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,701 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,703 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,703 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,730 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,732 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,733 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,733 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,734 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,734 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,734 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,734 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,735 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,736 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,737 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,738 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,741 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,742 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,743 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,745 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,745 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,748 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,748 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,749 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,750 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,750 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,751 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,752 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,753 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,755 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,759 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,760 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,762 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,762 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,764 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,764 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,764 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,765 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,765 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,766 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,766 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,766 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,767 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,767 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,768 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,768 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,769 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,769 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,770 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,771 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,771 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,772 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,772 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,773 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,773 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,774 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,775 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,777 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,777 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,778 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,780 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,780 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,781 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,781 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,782 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,783 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,785 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,785 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,786 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,790 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,791 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,791 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,792 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,792 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,792 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,793 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,794 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,795 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,796 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,797 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,798 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,799 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,799 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,800 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,800 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,802 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,803 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,804 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,806 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,807 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,807 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,808 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,809 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,810 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,811 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,812 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,813 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,814 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,814 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,815 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,815 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,816 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,816 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,816 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,817 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,817 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,817 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,818 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,818 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,819 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,820 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,820 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,824 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,824 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,825 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,833 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,836 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,841 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,842 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,847 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,847 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,849 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,851 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,851 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,851 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,852 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,852 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,852 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,853 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,854 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,854 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,855 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,855 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,855 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,856 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,856 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,856 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,856 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,857 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,857 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,857 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,858 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,858 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,859 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,860 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,860 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,861 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,861 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,862 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,863 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,864 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,864 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,865 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,865 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,865 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,866 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,866 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,867 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,867 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,868 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,869 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,869 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,870 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,874 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,881 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,883 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,884 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,884 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,885 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,886 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,889 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,890 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,890 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,890 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,891 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,891 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,891 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,891 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,893 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,894 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,895 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,896 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,896 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,902 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,904 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,905 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,905 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,905 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,906 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,907 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,907 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,909 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,909 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,910 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,910 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,911 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,911 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,912 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,912 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,913 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,913 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,914 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,916 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,917 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,917 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,918 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,918 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,919 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,919 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,921 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,921 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,921 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,922 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,922 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,922 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,924 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,925 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,929 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,936 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,939 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,939 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,941 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,943 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,945 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,950 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,950 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,950 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,950 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,951 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,951 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,951 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:24:08,953 - CalendarScraper - INFO - Successfully updated 0 events in DB.
+2026-01-31 10:24:08,954 - MasterUpdater - INFO - [OK] Calendar Update Complete.
+2026-01-31 10:24:09,960 - RetailSentimentAgent - INFO - Extracted sentiment for 72 instruments.
+2026-01-31 10:24:10,431 - MasterUpdater - INFO - [OK] Retail Sentiment Saved (72 items).
+2026-01-31 10:24:10,920 - MarcToMarketScraper - INFO - Saved article: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:24:10,920 - MarcToMarketScraper - INFO - Processing: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:24:12,842 - MarcToMarketScraper - INFO - Saved article: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:24:12,844 - MarcToMarketScraper - INFO - Processing: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:24:14,810 - MarcToMarketScraper - INFO - Saved article: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:24:14,810 - MarcToMarketScraper - INFO - Processing: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:24:16,544 - MarcToMarketScraper - INFO - Saved article: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:24:16,545 - MarcToMarketScraper - INFO - Processing: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:24:18,246 - MarcToMarketScraper - INFO - Saved article: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:24:18,971 - MarcToMarketScraper - INFO - Crawl Complete.
+2026-01-31 10:24:18,972 - MasterUpdater - INFO - [OK] MarcToMarket Update Complete.
+2026-01-31 10:24:21,083 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:24:21,504 - SentimentMiner - WARNING - No valid data for EURUSD
+2026-01-31 10:24:21,505 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/GBPUSD...
+2026-01-31 10:24:30,879 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:24:31,357 - InstitutionalResearcher - INFO - Insight: MUFG -> Bullish
+2026-01-31 10:24:31,360 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:24:31,377 - InstitutionalResearcher - INFO - Insight: MUFG -> Bullish
+2026-01-31 10:24:31,387 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:24:31,398 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:24:31,401 - InstitutionalResearcher - INFO - Insight: ABN AMRO -> Cautious
+2026-01-31 10:24:31,431 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:24:31,447 - InstitutionalResearcher - INFO - Insight: Rabobank -> Neutral
+2026-01-31 10:24:31,484 - InstitutionalResearcher - INFO - Insight: UBS -> Bearish
+2026-01-31 10:24:31,486 - InstitutionalResearcher - INFO - Insight: TD Securities -> Bearish
+2026-01-31 10:24:31,500 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 10:24:31,506 - InstitutionalResearcher - INFO - Insight: Societe Generale -> Positive
+2026-01-31 10:24:31,507 - InstitutionalResearcher - INFO - Insight: TD Securities -> Mixed
+2026-01-31 10:24:31,521 - InstitutionalResearcher - INFO - Insight: BNY -> Bearish
+2026-01-31 10:24:31,547 - InstitutionalResearcher - INFO - Insight: BBH -> Positive
+2026-01-31 10:24:31,560 - InstitutionalResearcher - INFO - Insight: ING -> Neutral
+2026-01-31 10:24:31,573 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 10:24:33,758 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/central-bank-news
+2026-01-31 10:24:37,120 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:24:37,124 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:24:37,124 - InstitutionalResearcher - INFO - Found 0 articles. Scanning top 5...
+2026-01-31 10:24:37,124 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/news
+2026-01-31 10:24:39,126 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:24:39,649 - SentimentMiner - WARNING - No valid data for GBPUSD
+2026-01-31 10:24:39,651 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDJPY...
+2026-01-31 10:24:44,029 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:24:44,040 - InstitutionalResearcher - INFO - Found 10 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:24:44,042 - InstitutionalResearcher - INFO - Found 10 articles. Scanning top 5...
+2026-01-31 10:24:44,043 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22857-pound-to-dirham-rate-forecast-solid-momentum-but-near-term-caution
+2026-01-31 10:24:49,710 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:24:49,720 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:24:49,732 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22794-pound-to-dirham-rate-week-ahead-forecast-appreciation-more-likely
+2026-01-31 10:24:56,688 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:24:56,752 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:24:56,763 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22780-krona-hit-by-profit-taking-following-inflation-print
+2026-01-31 10:24:56,876 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:24:57,330 - SentimentMiner - WARNING - No valid data for USDJPY
+2026-01-31 10:24:57,330 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/XAUUSD...
+2026-01-31 10:25:02,510 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:02,521 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:25:02,529 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22775-swedish-krona-tipped-to-carry-winning-ways-into-early-2026
+2026-01-31 10:25:09,222 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:09,233 - InstitutionalResearcher - INFO - Saved Article: Swedish Krona Tipped to Carry Winning Ways into Early 2026
+2026-01-31 10:25:09,244 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/usd/22887-pound-dollar-drops-towards-1-37
+2026-01-31 10:25:14,903 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:14,921 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:25:16,130 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:25:16,653 - SentimentMiner - WARNING - No valid data for XAUUSD
+2026-01-31 10:25:16,654 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/AUDUSD...
+2026-01-31 10:25:18,432 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:21,135 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:23,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:24,774 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:27,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:25:27,140 - MasterUpdater - INFO - [OK] Institutional Research Complete.
+2026-01-31 10:25:34,133 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:25:34,515 - SentimentMiner - WARNING - No valid data for AUDUSD
+2026-01-31 10:25:34,516 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCAD...
+2026-01-31 10:25:51,616 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:25:51,995 - SentimentMiner - WARNING - No valid data for USDCAD
+2026-01-31 10:25:51,995 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCHF...
+2026-01-31 10:26:09,573 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:26:10,205 - SentimentMiner - WARNING - No valid data for USDCHF
+2026-01-31 10:26:10,206 - MasterUpdater - INFO - [OK] Sentiment History Complete.
+2026-01-31 10:26:10,206 - MasterUpdater - INFO - [DONE] ALL UPDATES FINISHED
+2026-01-31 10:53:03,268 - MasterUpdater - INFO - [START] STARTING PARALLEL MARKET DATA UPDATE
+2026-01-31 10:53:03,268 - MasterUpdater - INFO - Database Target: C:\MacroLens\backend\market_data.db
+2026-01-31 10:53:03,269 - MasterUpdater - INFO - [TASK] Starting Economic Calendar Update...
+2026-01-31 10:53:03,276 - CalendarScraper - INFO - Fetching calendar from https://sslecal2.forexprostools.com/...
+2026-01-31 10:53:03,381 - MasterUpdater - INFO - [TASK] Starting MarcToMarket News Update...
+2026-01-31 10:53:03,387 - MarcToMarketScraper - INFO - Starting MarcToMarket Crawl...
+2026-01-31 10:53:03,554 - MasterUpdater - INFO - [TASK] Starting Retail Sentiment Update...
+2026-01-31 10:53:03,555 - RetailSentimentAgent - INFO - Crawling https://www.myfxbook.com/community/outlook...
+2026-01-31 10:53:03,643 - MasterUpdater - INFO - [TASK] Starting Institutional Researcher (Deep Dive)...
+2026-01-31 10:53:03,650 - InstitutionalResearcher - INFO - Initializing Institutional Researcher (Crawl4AI)...
+2026-01-31 10:53:03,651 - InstitutionalResearcher - INFO - Crawling FXStreet Banks: https://www.fxstreet.com/news?dFR%5BCategory%5D%5B0%5D=News&dFR%5BTags%5D%5B0%5D=Banks
+2026-01-31 10:53:03,754 - MasterUpdater - INFO - [TASK] Starting Sentiment History Miner...
+2026-01-31 10:53:03,757 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/EURUSD...
+2026-01-31 10:53:13,359 - MarcToMarketScraper - INFO - Found 7 recent posts.
+2026-01-31 10:53:13,361 - MarcToMarketScraper - INFO - Processing: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:53:20,087 - RetailSentimentAgent - INFO - Extracted sentiment for 72 instruments.
+2026-01-31 10:53:21,485 - MarcToMarketScraper - INFO - Saved article: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:53:21,487 - MarcToMarketScraper - INFO - Processing: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:53:21,634 - MasterUpdater - INFO - [OK] Retail Sentiment Saved (72 items).
+2026-01-31 10:53:23,543 - MarcToMarketScraper - INFO - Saved article: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:53:23,545 - MarcToMarketScraper - INFO - Processing: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:53:24,922 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:24,985 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:53:25,002 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:53:25,017 - InstitutionalResearcher - INFO - Insight: MUFG -> Upward
+2026-01-31 10:53:25,020 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:53:25,031 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:53:25,038 - InstitutionalResearcher - INFO - Insight: ABN AMRO -> Neutral
+2026-01-31 10:53:25,062 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:53:25,067 - InstitutionalResearcher - INFO - Insight: Rabobank -> Neutral
+2026-01-31 10:53:25,082 - InstitutionalResearcher - INFO - Insight: UBS -> Downward
+2026-01-31 10:53:25,086 - InstitutionalResearcher - INFO - Insight: TD Securities -> Downward
+2026-01-31 10:53:25,123 - InstitutionalResearcher - INFO - Insight: BBH -> Range-bound
+2026-01-31 10:53:25,126 - InstitutionalResearcher - INFO - Insight: Societe Generale -> Neutral
+2026-01-31 10:53:25,127 - InstitutionalResearcher - INFO - Insight: TD Securities -> Mixed
+2026-01-31 10:53:25,149 - InstitutionalResearcher - INFO - Insight: BNY -> Downward
+2026-01-31 10:53:25,181 - InstitutionalResearcher - INFO - Insight: BBH -> Stable
+2026-01-31 10:53:25,199 - InstitutionalResearcher - INFO - Insight: ING -> Stable
+2026-01-31 10:53:25,217 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 10:53:26,252 - MarcToMarketScraper - INFO - Saved article: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:53:26,259 - MarcToMarketScraper - INFO - Processing: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:53:28,872 - MarcToMarketScraper - INFO - Saved article: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:53:28,874 - MarcToMarketScraper - INFO - Processing: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:53:28,923 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/central-bank-news
+2026-01-31 10:53:31,135 - MarcToMarketScraper - INFO - Saved article: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:53:31,620 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:53:32,844 - SentimentMiner - WARNING - No valid data for EURUSD
+2026-01-31 10:53:32,845 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/GBPUSD...
+2026-01-31 10:53:32,856 - MarcToMarketScraper - INFO - Crawl Complete.
+2026-01-31 10:53:32,857 - MasterUpdater - INFO - [OK] MarcToMarket Update Complete.
+2026-01-31 10:53:33,860 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:33,864 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:53:33,865 - InstitutionalResearcher - INFO - Found 0 articles. Scanning top 5...
+2026-01-31 10:53:33,865 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/news
+2026-01-31 10:53:40,443 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:40,447 - InstitutionalResearcher - INFO - Found 10 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:53:40,448 - InstitutionalResearcher - INFO - Found 10 articles. Scanning top 5...
+2026-01-31 10:53:40,448 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22857-pound-to-dirham-rate-forecast-solid-momentum-but-near-term-caution
+2026-01-31 10:53:45,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:45,372 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22794-pound-to-dirham-rate-week-ahead-forecast-appreciation-more-likely
+2026-01-31 10:53:50,137 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:53:50,585 - SentimentMiner - WARNING - No valid data for GBPUSD
+2026-01-31 10:53:50,586 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDJPY...
+2026-01-31 10:53:51,044 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:51,062 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22780-krona-hit-by-profit-taking-following-inflation-print
+2026-01-31 10:53:55,596 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:53:55,627 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22775-swedish-krona-tipped-to-carry-winning-ways-into-early-2026
+2026-01-31 10:54:01,625 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:01,645 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/usd/22887-pound-dollar-drops-towards-1-37
+2026-01-31 10:54:08,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:08,693 - MasterUpdater - INFO - [OK] Calendar Update Complete.
+2026-01-31 10:54:09,534 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:54:09,961 - SentimentMiner - WARNING - No valid data for USDJPY
+2026-01-31 10:54:09,962 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/XAUUSD...
+2026-01-31 10:54:10,960 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:13,263 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:16,196 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:18,034 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:19,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:54:19,901 - MasterUpdater - INFO - [OK] Institutional Research Complete.
+2026-01-31 10:54:28,685 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:54:29,046 - SentimentMiner - WARNING - No valid data for XAUUSD
+2026-01-31 10:54:29,047 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/AUDUSD...
+2026-01-31 10:54:45,801 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:54:46,175 - SentimentMiner - WARNING - No valid data for AUDUSD
+2026-01-31 10:54:46,176 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCAD...
+2026-01-31 10:55:03,600 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:55:04,096 - SentimentMiner - WARNING - No valid data for USDCAD
+2026-01-31 10:55:04,097 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCHF...
+2026-01-31 10:55:21,314 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:55:21,750 - SentimentMiner - WARNING - No valid data for USDCHF
+2026-01-31 10:55:21,750 - MasterUpdater - INFO - [OK] Sentiment History Complete.
+2026-01-31 10:55:21,751 - MasterUpdater - INFO - [DONE] ALL UPDATES FINISHED
+2026-01-31 10:56:18,200 - MasterUpdater - INFO - [START] STARTING PARALLEL MARKET DATA UPDATE
+2026-01-31 10:56:18,201 - MasterUpdater - INFO - Database Target: C:\MacroLens\backend\market_data.db
+2026-01-31 10:56:18,201 - MasterUpdater - INFO - [TASK] Starting Economic Calendar Update...
+2026-01-31 10:56:18,211 - CalendarScraper - INFO - Fetching calendar from https://sslecal2.forexprostools.com/...
+2026-01-31 10:56:18,303 - MasterUpdater - INFO - [TASK] Starting MarcToMarket News Update...
+2026-01-31 10:56:18,309 - MarcToMarketScraper - INFO - Starting MarcToMarket Crawl...
+2026-01-31 10:56:18,479 - MasterUpdater - INFO - [TASK] Starting Retail Sentiment Update...
+2026-01-31 10:56:18,479 - RetailSentimentAgent - INFO - Crawling https://www.myfxbook.com/community/outlook...
+2026-01-31 10:56:18,544 - MasterUpdater - INFO - [TASK] Starting Institutional Researcher (Deep Dive)...
+2026-01-31 10:56:18,548 - InstitutionalResearcher - INFO - Initializing Institutional Researcher (Crawl4AI)...
+2026-01-31 10:56:18,548 - InstitutionalResearcher - INFO - Crawling FXStreet Banks: https://www.fxstreet.com/news?dFR%5BCategory%5D%5B0%5D=News&dFR%5BTags%5D%5B0%5D=Banks
+2026-01-31 10:56:18,630 - MasterUpdater - INFO - [TASK] Starting Sentiment History Miner...
+2026-01-31 10:56:18,630 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/EURUSD...
+2026-01-31 10:56:30,202 - MarcToMarketScraper - INFO - Found 7 recent posts.
+2026-01-31 10:56:30,205 - MarcToMarketScraper - INFO - Processing: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:56:31,750 - RetailSentimentAgent - INFO - Extracted sentiment for 72 instruments.
+2026-01-31 10:56:32,515 - CalendarScraper - INFO - Found 679 rows in calendar table.
+2026-01-31 10:56:32,517 - CalendarScraper - INFO - Processing Date: 2026-01-26
+2026-01-31 10:56:32,519 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 10:56:32,519 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 10:56:32,550 - CalendarScraper - INFO - Processing Date: 2026-01-27
+2026-01-31 10:56:32,604 - CalendarScraper - INFO - Processing Date: 2026-01-28
+2026-01-31 10:56:32,631 - CalendarScraper - INFO - Processing Date: 2026-01-29
+2026-01-31 10:56:32,688 - CalendarScraper - INFO - Processing Date: 2026-01-30
+2026-01-31 10:56:32,756 - CalendarScraper - INFO - Processing Date: 2026-01-31
+2026-01-31 10:56:32,763 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,780 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,781 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,781 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,782 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,783 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,783 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,783 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,784 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,785 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,785 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,786 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,786 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,787 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,788 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,788 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,788 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,789 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,790 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,790 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,791 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,791 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,791 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,792 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,792 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,793 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,793 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,793 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,793 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,795 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,797 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,797 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,797 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,798 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,799 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,799 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,799 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,800 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,800 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,801 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,802 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,802 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,802 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,803 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,803 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,803 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,803 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,804 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,804 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,805 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,805 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,805 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,806 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,806 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,806 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,807 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,807 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,807 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,808 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,808 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,808 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,809 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,810 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,810 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,810 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,811 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,814 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,817 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,818 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,818 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,819 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,820 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,820 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,820 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,821 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,822 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,822 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,823 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,824 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,825 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,825 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,825 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,826 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,826 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,826 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,827 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,828 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,828 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,829 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,830 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,830 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,831 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,831 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,831 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,832 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,832 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,832 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,833 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,833 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,833 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,834 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,834 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,834 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,835 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,835 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,835 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,836 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,836 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,836 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,837 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,837 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,837 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,838 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,839 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,840 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,840 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,841 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,841 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,841 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,842 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,842 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,843 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,843 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,843 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,843 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,844 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,845 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,846 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,847 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,848 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,849 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,849 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,850 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,851 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,852 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,852 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,853 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,853 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,854 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,855 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,856 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,857 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,858 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,858 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,859 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,859 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,860 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,861 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,862 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,862 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,862 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,863 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,863 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,864 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,864 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,865 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,865 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,866 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,866 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,867 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,867 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,867 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,868 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,868 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,868 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,868 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,869 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,869 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,869 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,870 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,870 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,871 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,872 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,872 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,872 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,873 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,873 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,873 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,873 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,874 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,874 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,875 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,875 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,875 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,892 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,893 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,893 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,894 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,894 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,894 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,895 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,895 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,895 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,896 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,896 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,896 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,897 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,897 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,897 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,898 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,899 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,900 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,900 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,900 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,901 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,905 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,909 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,912 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,912 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,913 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,913 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,913 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,914 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,915 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,916 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,916 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,916 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,916 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,917 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,918 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,918 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,919 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,919 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,919 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,920 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,921 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,922 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,922 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,923 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,924 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,924 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,924 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,925 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,925 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,926 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,926 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,927 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,927 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,928 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,928 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,929 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,929 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,929 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,930 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,930 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,930 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,931 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,931 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,931 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,931 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,933 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,933 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,933 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,934 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,934 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,934 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,934 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,935 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,935 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,935 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,936 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,936 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,936 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,936 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,937 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,937 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,937 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,938 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,939 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,939 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,939 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,940 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,941 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,941 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,941 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,942 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,943 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,943 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,943 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,944 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,945 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,945 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,946 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,946 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,946 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,947 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,948 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,949 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,950 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 10:56:32,952 - CalendarScraper - INFO - Successfully updated 0 events in DB.
+2026-01-31 10:56:32,953 - MasterUpdater - INFO - [OK] Calendar Update Complete.
+2026-01-31 10:56:37,293 - MasterUpdater - INFO - [OK] Retail Sentiment Saved (72 items).
+2026-01-31 10:56:38,875 - MarcToMarketScraper - INFO - Saved article: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 10:56:38,876 - MarcToMarketScraper - INFO - Processing: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:56:40,738 - MarcToMarketScraper - INFO - Saved article: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 10:56:40,738 - MarcToMarketScraper - INFO - Processing: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:56:42,454 - MarcToMarketScraper - INFO - Saved article: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 10:56:42,454 - MarcToMarketScraper - INFO - Processing: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:56:44,219 - MarcToMarketScraper - INFO - Saved article: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 10:56:44,219 - MarcToMarketScraper - INFO - Processing: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:56:45,873 - MarcToMarketScraper - INFO - Saved article: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 10:56:46,182 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:56:46,228 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:56:46,233 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:56:46,241 - InstitutionalResearcher - INFO - Insight: MUFG -> Bullish
+2026-01-31 10:56:46,246 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 10:56:46,255 - InstitutionalResearcher - INFO - Insight: MUFG -> Bearish
+2026-01-31 10:56:46,258 - InstitutionalResearcher - INFO - Insight: ABN AMRO -> Neutral
+2026-01-31 10:56:46,278 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 10:56:46,282 - InstitutionalResearcher - INFO - Insight: Rabobank -> Neutral
+2026-01-31 10:56:46,301 - InstitutionalResearcher - INFO - Insight: UBS -> Bearish
+2026-01-31 10:56:46,304 - InstitutionalResearcher - INFO - Insight: TD Securities -> Bearish
+2026-01-31 10:56:46,319 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 10:56:46,336 - InstitutionalResearcher - INFO - Insight: Societe Generale -> Neutral
+2026-01-31 10:56:46,339 - InstitutionalResearcher - INFO - Insight: TD Securities -> Neutral
+2026-01-31 10:56:46,352 - InstitutionalResearcher - INFO - Insight: BNY -> Bearish
+2026-01-31 10:56:46,374 - InstitutionalResearcher - INFO - Insight: BBH -> Bullish
+2026-01-31 10:56:46,386 - InstitutionalResearcher - INFO - Insight: ING -> Neutral
+2026-01-31 10:56:46,402 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 10:56:46,998 - MarcToMarketScraper - INFO - Crawl Complete.
+2026-01-31 10:56:46,998 - MasterUpdater - INFO - [OK] MarcToMarket Update Complete.
+2026-01-31 10:56:47,898 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:56:48,437 - SentimentMiner - WARNING - No valid data for EURUSD
+2026-01-31 10:56:48,439 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/GBPUSD...
+2026-01-31 10:56:48,659 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/central-bank-news
+2026-01-31 10:56:50,956 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:56:50,961 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:56:50,962 - InstitutionalResearcher - INFO - Found 0 articles. Scanning top 5...
+2026-01-31 10:56:50,962 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/news
+2026-01-31 10:56:57,201 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:56:57,207 - InstitutionalResearcher - INFO - Found 10 articles in feed. Filtering for Major Pairs...
+2026-01-31 10:56:57,207 - InstitutionalResearcher - INFO - Found 10 articles. Scanning top 5...
+2026-01-31 10:56:57,208 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22857-pound-to-dirham-rate-forecast-solid-momentum-but-near-term-caution
+2026-01-31 10:57:01,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:01,708 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:57:01,718 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22794-pound-to-dirham-rate-week-ahead-forecast-appreciation-more-likely
+2026-01-31 10:57:06,782 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:57:07,170 - SentimentMiner - WARNING - No valid data for GBPUSD
+2026-01-31 10:57:07,171 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDJPY...
+2026-01-31 10:57:08,534 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:08,555 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:57:08,606 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22780-krona-hit-by-profit-taking-following-inflation-print
+2026-01-31 10:57:13,731 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:13,745 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:57:13,756 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/news/22775-swedish-krona-tipped-to-carry-winning-ways-into-early-2026
+2026-01-31 10:57:19,477 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:19,501 - InstitutionalResearcher - INFO - Deep Crawling: https://www.poundsterlinglive.com/usd/22887-pound-dollar-drops-towards-1-37
+2026-01-31 10:57:24,784 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:57:25,164 - SentimentMiner - WARNING - No valid data for USDJPY
+2026-01-31 10:57:25,165 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/XAUUSD...
+2026-01-31 10:57:27,440 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:27,453 - InstitutionalResearcher - INFO - Saved Article: Pound-Dollar Drops Towards 1.37
+2026-01-31 10:57:29,601 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:31,227 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:33,067 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:34,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:36,670 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 10:57:36,676 - MasterUpdater - INFO - [OK] Institutional Research Complete.
+2026-01-31 10:57:43,875 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:57:44,230 - SentimentMiner - WARNING - No valid data for XAUUSD
+2026-01-31 10:57:44,231 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/AUDUSD...
+2026-01-31 10:58:01,237 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:58:01,760 - SentimentMiner - WARNING - No valid data for AUDUSD
+2026-01-31 10:58:01,761 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCAD...
+2026-01-31 10:58:19,061 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:58:19,457 - SentimentMiner - WARNING - No valid data for USDCAD
+2026-01-31 10:58:19,458 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCHF...
+2026-01-31 10:58:36,984 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 10:58:37,331 - SentimentMiner - WARNING - No valid data for USDCHF
+2026-01-31 10:58:37,332 - MasterUpdater - INFO - [OK] Sentiment History Complete.
+2026-01-31 10:58:37,332 - MasterUpdater - INFO - [DONE] ALL UPDATES FINISHED
+2026-01-31 11:37:16,703 - MasterUpdater - INFO - [START] STARTING PARALLEL MARKET DATA UPDATE
+2026-01-31 11:37:16,703 - MasterUpdater - INFO - Database Target: C:\MacroLens\backend\market_data.db
+2026-01-31 11:37:16,704 - MasterUpdater - INFO - [TASK] Starting Economic Calendar Update...
+2026-01-31 11:37:16,712 - CalendarScraper - INFO - Fetching calendar from https://sslecal2.forexprostools.com/...
+2026-01-31 11:37:16,802 - MasterUpdater - INFO - [TASK] Starting MarcToMarket News Update...
+2026-01-31 11:37:16,812 - MarcToMarketScraper - INFO - Starting MarcToMarket Crawl...
+2026-01-31 11:37:17,000 - MasterUpdater - INFO - [TASK] Starting Retail Sentiment Update...
+2026-01-31 11:37:17,000 - RetailSentimentAgent - INFO - Crawling https://www.myfxbook.com/community/outlook...
+2026-01-31 11:37:17,072 - MasterUpdater - INFO - [TASK] Starting Institutional Researcher (Deep Dive)...
+2026-01-31 11:37:17,077 - InstitutionalResearcher - INFO - Initializing Institutional Researcher (Crawl4AI)...
+2026-01-31 11:37:17,078 - InstitutionalResearcher - INFO - Crawling FXStreet Banks: https://www.fxstreet.com/news?dFR%5BCategory%5D%5B0%5D=News&dFR%5BTags%5D%5B0%5D=Banks
+2026-01-31 11:37:17,149 - MasterUpdater - INFO - [TASK] Starting Sentiment History Miner...
+2026-01-31 11:37:17,150 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/EURUSD...
+2026-01-31 11:37:26,949 - MarcToMarketScraper - INFO - Found 7 recent posts.
+2026-01-31 11:37:27,042 - MarcToMarketScraper - INFO - Processing: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 11:37:30,360 - RetailSentimentAgent - INFO - Extracted sentiment for 72 instruments.
+2026-01-31 11:37:32,056 - CalendarScraper - INFO - Found 679 rows in calendar table.
+2026-01-31 11:37:32,058 - CalendarScraper - INFO - Processing Date: 2026-01-26
+2026-01-31 11:37:32,059 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 11:37:32,060 - CalendarScraper - WARNING - Error parsing row: list index out of range
+2026-01-31 11:37:32,119 - CalendarScraper - INFO - Processing Date: 2026-01-27
+2026-01-31 11:37:32,150 - CalendarScraper - INFO - Processing Date: 2026-01-28
+2026-01-31 11:37:32,189 - CalendarScraper - INFO - Processing Date: 2026-01-29
+2026-01-31 11:37:32,255 - CalendarScraper - INFO - Processing Date: 2026-01-30
+2026-01-31 11:37:32,331 - CalendarScraper - INFO - Processing Date: 2026-01-31
+2026-01-31 11:37:32,337 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,338 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,338 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,339 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,340 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,340 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,341 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,341 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,341 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,342 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,342 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,342 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,343 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,343 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,344 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,344 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,345 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,345 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,346 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,346 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,347 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,347 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,350 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,350 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,351 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,351 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,352 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,352 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,352 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,353 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,353 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,353 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,354 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,354 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,354 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,355 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,355 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,355 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,356 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,356 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,356 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,357 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,357 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,357 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,358 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,358 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,358 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,359 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,359 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,359 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,360 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,360 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,360 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,361 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,361 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,361 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,362 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,362 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,362 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,362 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,363 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,363 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,364 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,365 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,365 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,366 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,366 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,366 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,367 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,367 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,367 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,368 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,369 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,369 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,369 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,370 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,370 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,370 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,371 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,371 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,371 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,372 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,372 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,372 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,372 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,373 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,374 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,374 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,374 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,375 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,375 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,375 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,376 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,376 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,377 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,377 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,378 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,378 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,378 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,379 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,379 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,379 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,380 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,380 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,380 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,380 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,381 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,382 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,382 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,382 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,383 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,383 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,384 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,384 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,384 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,384 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,385 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,385 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,385 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,385 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,385 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,386 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,386 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,387 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,387 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,387 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,388 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,388 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,389 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,389 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,389 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,389 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,390 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,390 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,390 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,391 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,391 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,391 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,392 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,392 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,393 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,393 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,393 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,394 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,394 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,394 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,394 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,395 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,395 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,395 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,396 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,396 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,396 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,397 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,397 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,397 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,397 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,398 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,398 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,398 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,398 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,399 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,399 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,399 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,400 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,400 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,400 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,400 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,401 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,401 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,402 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,402 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,402 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,403 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,404 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,405 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,405 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,406 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,407 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,408 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,408 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,409 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,410 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,411 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,411 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,412 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,412 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,413 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,413 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,414 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,415 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,415 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,416 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,416 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,416 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,417 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,417 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,418 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,418 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,418 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,418 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,419 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,419 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,420 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,420 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,420 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,420 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,421 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,421 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,421 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,422 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,422 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,422 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,423 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,423 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,423 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,423 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,424 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,424 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,424 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,424 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,424 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,425 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,425 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,425 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,425 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,426 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,426 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,426 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,427 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,427 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,427 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,428 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,428 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,428 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,428 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,429 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,429 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,430 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,430 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,430 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,431 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,431 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,431 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,432 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,432 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,433 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,433 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,434 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,435 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,435 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,435 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,436 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,436 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,436 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,437 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,438 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,439 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,440 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,444 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,446 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,446 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,448 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,448 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,448 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,449 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,449 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,450 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,450 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,450 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,451 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,451 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,452 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,452 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,452 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,453 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,453 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,454 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,454 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,455 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,455 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,455 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,456 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,456 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,457 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,457 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,458 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,458 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,459 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,459 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,460 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,460 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,462 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,466 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,466 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,467 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,467 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,468 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,469 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,469 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,470 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,470 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,473 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,475 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,476 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,477 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,477 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,478 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,479 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,479 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,480 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,481 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,481 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,481 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,481 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,482 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,483 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,484 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,484 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,484 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,485 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,485 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,486 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,486 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,487 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,487 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,488 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,488 - CalendarScraper - ERROR - DB Error: table economic_events has no column named event_id
+2026-01-31 11:37:32,490 - CalendarScraper - INFO - Successfully updated 0 events in DB.
+2026-01-31 11:37:32,491 - MasterUpdater - INFO - [OK] Calendar Update Complete.
+2026-01-31 11:37:36,152 - MasterUpdater - INFO - [OK] Retail Sentiment Saved (72 items).
+2026-01-31 11:37:37,148 - MarcToMarketScraper - INFO - Saved article: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 11:37:37,149 - MarcToMarketScraper - INFO - Processing: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 11:37:39,335 - MarcToMarketScraper - INFO - Saved article: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 11:37:39,337 - MarcToMarketScraper - INFO - Processing: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 11:37:41,590 - MarcToMarketScraper - INFO - Saved article: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 11:37:41,591 - MarcToMarketScraper - INFO - Processing: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 11:37:43,793 - MarcToMarketScraper - INFO - Saved article: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 11:37:43,794 - MarcToMarketScraper - INFO - Processing: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 11:37:45,701 - MarcToMarketScraper - INFO - Saved article: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 11:37:45,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:37:45,964 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 11:37:45,967 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 11:37:45,977 - InstitutionalResearcher - INFO - Insight: MUFG -> Bullish
+2026-01-31 11:37:45,980 - InstitutionalResearcher - INFO - Insight: DBS Bank -> Neutral
+2026-01-31 11:37:45,990 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 11:37:45,993 - InstitutionalResearcher - INFO - Insight: ABN AMRO -> Cautious
+2026-01-31 11:37:46,015 - InstitutionalResearcher - INFO - Insight: MUFG -> Neutral
+2026-01-31 11:37:46,018 - InstitutionalResearcher - INFO - Insight: Rabobank -> Neutral
+2026-01-31 11:37:46,029 - InstitutionalResearcher - INFO - Insight: UBS -> Bearish
+2026-01-31 11:37:46,032 - InstitutionalResearcher - INFO - Insight: TD Securities -> Bearish
+2026-01-31 11:37:46,043 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 11:37:46,046 - InstitutionalResearcher - INFO - Insight: Societe Generale -> Optimistic
+2026-01-31 11:37:46,047 - InstitutionalResearcher - INFO - Insight: TD Securities -> Mixed
+2026-01-31 11:37:46,059 - InstitutionalResearcher - INFO - Insight: BNY -> Bearish
+2026-01-31 11:37:46,073 - InstitutionalResearcher - INFO - Insight: BBH -> Stable
+2026-01-31 11:37:46,084 - InstitutionalResearcher - INFO - Insight: ING -> Stable
+2026-01-31 11:37:46,099 - InstitutionalResearcher - INFO - Insight: BBH -> Neutral
+2026-01-31 11:37:46,614 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:37:46,902 - MarcToMarketScraper - INFO - Crawl Complete.
+2026-01-31 11:37:46,904 - MasterUpdater - INFO - [OK] MarcToMarket Update Complete.
+2026-01-31 11:37:47,189 - SentimentMiner - WARNING - No valid data for EURUSD
+2026-01-31 11:37:47,190 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/GBPUSD...
+2026-01-31 11:37:48,940 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/central-bank-news [macro]
+2026-01-31 11:37:51,818 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:37:51,824 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:37:51,825 - InstitutionalResearcher - INFO - Found 0 articles in macro. Scanning top 3...
+2026-01-31 11:37:51,826 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/pound-news [GBP]
+2026-01-31 11:37:54,320 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:37:54,325 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:37:54,326 - InstitutionalResearcher - INFO - Found 0 articles in GBP. Scanning top 3...
+2026-01-31 11:37:54,328 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/euro-news [EUR]
+2026-01-31 11:37:57,330 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:37:57,333 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:37:57,334 - InstitutionalResearcher - INFO - Found 0 articles in EUR. Scanning top 3...
+2026-01-31 11:37:57,334 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/us-dollar-news [USD]
+2026-01-31 11:37:59,776 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:37:59,781 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:37:59,782 - InstitutionalResearcher - INFO - Found 0 articles in USD. Scanning top 3...
+2026-01-31 11:37:59,783 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/australian-dollar-news [AUD]
+2026-01-31 11:38:02,099 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:02,103 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:38:02,104 - InstitutionalResearcher - INFO - Found 0 articles in AUD. Scanning top 3...
+2026-01-31 11:38:02,104 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/canadian-dollar-news [CAD]
+2026-01-31 11:38:05,553 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:05,556 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:38:05,557 - InstitutionalResearcher - INFO - Found 0 articles in CAD. Scanning top 3...
+2026-01-31 11:38:05,558 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/new-zealand-dollar-news [NZD]
+2026-01-31 11:38:06,520 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:38:07,247 - SentimentMiner - WARNING - No valid data for GBPUSD
+2026-01-31 11:38:07,248 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDJPY...
+2026-01-31 11:38:08,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:08,099 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:38:08,100 - InstitutionalResearcher - INFO - Found 0 articles in NZD. Scanning top 3...
+2026-01-31 11:38:08,100 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/japanese-yen-news [JPY]
+2026-01-31 11:38:10,631 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:10,638 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:38:10,639 - InstitutionalResearcher - INFO - Found 0 articles in JPY. Scanning top 3...
+2026-01-31 11:38:10,639 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/swiss-franc-news [CHF]
+2026-01-31 11:38:13,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:13,491 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 11:38:13,492 - InstitutionalResearcher - INFO - Found 0 articles in CHF. Scanning top 3...
+2026-01-31 11:38:16,254 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:18,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:20,094 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:22,209 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:23,881 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 11:38:23,897 - MasterUpdater - INFO - [OK] Institutional Research Complete.
+2026-01-31 11:38:25,130 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:38:25,642 - SentimentMiner - WARNING - No valid data for USDJPY
+2026-01-31 11:38:25,643 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/XAUUSD...
+2026-01-31 11:38:44,396 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:38:44,784 - SentimentMiner - WARNING - No valid data for XAUUSD
+2026-01-31 11:38:44,785 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/AUDUSD...
+2026-01-31 11:39:01,878 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:39:02,253 - SentimentMiner - WARNING - No valid data for AUDUSD
+2026-01-31 11:39:02,254 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCAD...
+2026-01-31 11:39:19,426 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:39:19,951 - SentimentMiner - WARNING - No valid data for USDCAD
+2026-01-31 11:39:19,952 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCHF...
+2026-01-31 11:39:37,232 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 11:39:37,585 - SentimentMiner - WARNING - No valid data for USDCHF
+2026-01-31 11:39:37,586 - MasterUpdater - INFO - [OK] Sentiment History Complete.
+2026-01-31 11:39:37,587 - MasterUpdater - INFO - [DONE] ALL UPDATES FINISHED
+2026-01-31 12:09:03,035 - MasterUpdater - INFO - [START] STARTING PARALLEL MARKET DATA UPDATE
+2026-01-31 12:09:03,036 - MasterUpdater - INFO - Database Target: C:\MacroLens\backend\market_data.db
+2026-01-31 12:09:03,037 - MasterUpdater - INFO - [TASK] Starting Economic Calendar Update...
+2026-01-31 12:09:03,048 - CalendarScraper - INFO - Fetching calendar from https://sslecal2.forexprostools.com/...
+2026-01-31 12:09:03,156 - MasterUpdater - INFO - [TASK] Starting MarcToMarket News Update...
+2026-01-31 12:09:03,164 - MarcToMarketScraper - INFO - Starting MarcToMarket Crawl...
+2026-01-31 12:09:03,366 - MasterUpdater - INFO - [TASK] Starting Retail Sentiment Update...
+2026-01-31 12:09:03,367 - RetailSentimentAgent - INFO - Crawling https://www.myfxbook.com/community/outlook...
+2026-01-31 12:09:03,449 - MasterUpdater - INFO - [TASK] Starting Institutional Researcher (Deep Dive)...
+2026-01-31 12:09:03,456 - InstitutionalResearcher - INFO - Initializing Institutional Researcher (Crawl4AI)...
+2026-01-31 12:09:03,457 - InstitutionalResearcher - INFO - Crawling FXStreet Banks: https://www.fxstreet.com/news?dFR%5BCategory%5D%5B0%5D=News&dFR%5BTags%5D%5B0%5D=Banks
+2026-01-31 12:09:03,534 - MasterUpdater - INFO - [TASK] Starting Sentiment History Miner...
+2026-01-31 12:09:03,535 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/EURUSD...
+2026-01-31 12:09:13,384 - MarcToMarketScraper - INFO - Found 7 recent posts.
+2026-01-31 12:09:13,392 - MarcToMarketScraper - INFO - Processing: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 12:09:21,347 - RetailSentimentAgent - INFO - Extracted sentiment for 72 instruments.
+2026-01-31 12:09:21,986 - MarcToMarketScraper - INFO - Saved article: Dollar Stalls after Bouncing on Speculation Warsh to Get Nod for Fed's Helm
+2026-01-31 12:09:21,987 - MarcToMarketScraper - INFO - Processing: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 12:09:22,592 - MasterUpdater - INFO - [OK] Retail Sentiment Saved (72 items).
+2026-01-31 12:09:24,143 - MarcToMarketScraper - INFO - Saved article: Dollar Gyrations but Little Changed ahead of the North American Session
+2026-01-31 12:09:24,143 - MarcToMarketScraper - INFO - Processing: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 12:09:25,953 - MarcToMarketScraper - INFO - Saved article: US Dollar Retraces Some of Yesterday's Dramatic Losses
+2026-01-31 12:09:25,954 - MarcToMarketScraper - INFO - Processing: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 12:09:27,737 - MarcToMarketScraper - INFO - Saved article: Greenback Mostly Consolidates, while Yen Gyrations Point to Nervous Market
+2026-01-31 12:09:27,738 - MarcToMarketScraper - INFO - Processing: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 12:09:30,339 - MarcToMarketScraper - INFO - Saved article: Dollar Sold Broadly, while Yen Soars on Fear of Joint Intervention
+2026-01-31 12:09:30,913 - MarcToMarketScraper - INFO - Crawl Complete.
+2026-01-31 12:09:30,914 - MasterUpdater - INFO - [OK] MarcToMarket Update Complete.
+2026-01-31 12:09:32,440 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:09:32,490 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:09:32,518 - InstitutionalResearcher - INFO - Found 17 Bank articles. Scanning top 5...
+2026-01-31 12:09:32,523 - InstitutionalResearcher - INFO - Deep Crawling FXStreet: https://www.fxstreet.com/news/usd-cny-potential-recapitalization-in-financial-sector-mufg-202601301955
+2026-01-31 12:09:33,150 - SentimentMiner - WARNING - No valid data for EURUSD
+2026-01-31 12:09:33,151 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/GBPUSD...
+2026-01-31 12:09:41,044 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:09:41,084 - InstitutionalResearcher - INFO - Saved Article: GBP/USD retreats further, threatens 1.3700
+2026-01-31 12:09:41,106 - InstitutionalResearcher - INFO - Deep Crawling FXStreet: https://www.fxstreet.com/news/inr-rbi-expected-to-pause-rate-cuts-dbs-bank-202601301928
+2026-01-31 12:09:50,227 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:09:50,239 - InstitutionalResearcher - INFO - Saved Article: INR: RBI expected to pause rate cuts – DBS Bank
+2026-01-31 12:09:50,248 - InstitutionalResearcher - INFO - Deep Crawling FXStreet: https://www.fxstreet.com/news/usd-krw-supplementary-budget-signals-upside-risk-mufg-202601301905
+2026-01-31 12:09:52,552 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:09:52,985 - SentimentMiner - WARNING - No valid data for GBPUSD
+2026-01-31 12:09:52,985 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDJPY...
+2026-01-31 12:09:55,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:09:55,688 - InstitutionalResearcher - INFO - Saved Article: GBP/USD retreats further, threatens 1.3700
+2026-01-31 12:09:55,703 - InstitutionalResearcher - INFO - Deep Crawling FXStreet: https://www.fxstreet.com/news/twd-central-bank-to-hold-policy-steady-dbs-bank-202601301806
+2026-01-31 12:10:01,875 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:01,889 - InstitutionalResearcher - INFO - Saved Article: GBP/USD retreats further, threatens 1.3700
+2026-01-31 12:10:01,901 - InstitutionalResearcher - INFO - Deep Crawling FXStreet: https://www.fxstreet.com/news/usd-idr-rupiah-stability-remains-uncertain-mufg-202601301732
+2026-01-31 12:10:08,374 - MasterUpdater - INFO - [OK] Calendar Update Complete.
+2026-01-31 12:10:09,560 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:09,571 - InstitutionalResearcher - INFO - Saved Article: GBP/USD retreats further, threatens 1.3700
+2026-01-31 12:10:10,427 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:10:10,822 - SentimentMiner - WARNING - No valid data for USDJPY
+2026-01-31 12:10:10,823 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/XAUUSD...
+2026-01-31 12:10:11,547 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/central-bank-news [macro]
+2026-01-31 12:10:14,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:14,452 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:14,452 - InstitutionalResearcher - INFO - Found 0 articles in macro. Scanning top 3...
+2026-01-31 12:10:14,452 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/pound-news [GBP]
+2026-01-31 12:10:17,135 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:17,141 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:17,142 - InstitutionalResearcher - INFO - Found 0 articles in GBP. Scanning top 3...
+2026-01-31 12:10:17,143 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/euro-news [EUR]
+2026-01-31 12:10:20,082 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:20,087 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:20,088 - InstitutionalResearcher - INFO - Found 0 articles in EUR. Scanning top 3...
+2026-01-31 12:10:20,088 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/us-dollar-news [USD]
+2026-01-31 12:10:23,198 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:23,204 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:23,204 - InstitutionalResearcher - INFO - Found 0 articles in USD. Scanning top 3...
+2026-01-31 12:10:23,205 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/australian-dollar-news [AUD]
+2026-01-31 12:10:26,159 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:26,166 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:26,166 - InstitutionalResearcher - INFO - Found 0 articles in AUD. Scanning top 3...
+2026-01-31 12:10:26,166 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/canadian-dollar-news [CAD]
+2026-01-31 12:10:29,736 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:29,752 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:29,753 - InstitutionalResearcher - INFO - Found 0 articles in CAD. Scanning top 3...
+2026-01-31 12:10:29,756 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/new-zealand-dollar-news [NZD]
+2026-01-31 12:10:31,872 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:10:32,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:32,191 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:32,192 - InstitutionalResearcher - INFO - Found 0 articles in NZD. Scanning top 3...
+2026-01-31 12:10:32,193 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/japanese-yen-news [JPY]
+2026-01-31 12:10:32,328 - SentimentMiner - WARNING - No valid data for XAUUSD
+2026-01-31 12:10:32,329 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/AUDUSD...
+2026-01-31 12:10:34,684 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:34,691 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:34,692 - InstitutionalResearcher - INFO - Found 0 articles in JPY. Scanning top 3...
+2026-01-31 12:10:34,693 - InstitutionalResearcher - INFO - Scanning Feed: https://www.poundsterlinglive.com/swiss-franc-news [CHF]
+2026-01-31 12:10:37,159 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:37,163 - InstitutionalResearcher - INFO - Found 0 articles in feed. Filtering for Major Pairs...
+2026-01-31 12:10:37,164 - InstitutionalResearcher - INFO - Found 0 articles in CHF. Scanning top 3...
+2026-01-31 12:10:40,078 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:42,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:44,724 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:46,848 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:49,128 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 12:10:49,135 - MasterUpdater - INFO - [OK] Institutional Research Complete.
+2026-01-31 12:10:50,049 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:10:50,745 - SentimentMiner - WARNING - No valid data for AUDUSD
+2026-01-31 12:10:50,746 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCAD...
+2026-01-31 12:11:07,898 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:11:08,450 - SentimentMiner - WARNING - No valid data for USDCAD
+2026-01-31 12:11:08,451 - SentimentMiner - INFO - Navigating to https://www.myfxbook.com/community/outlook/USDCHF...
+2026-01-31 12:11:26,182 - SentimentMiner - INFO - Network interception failed, trying JS fallback...
+2026-01-31 12:11:26,573 - SentimentMiner - WARNING - No valid data for USDCHF
+2026-01-31 12:11:26,574 - MasterUpdater - INFO - [OK] Sentiment History Complete.
+2026-01-31 12:11:26,574 - MasterUpdater - INFO - [DONE] ALL UPDATES FINISHED

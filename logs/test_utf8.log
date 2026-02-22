@@ -1,0 +1,3 @@
+﻿[FAIL] Login
+"HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/auth/login (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+----------------------------------------

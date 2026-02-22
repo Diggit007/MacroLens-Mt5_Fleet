@@ -1,0 +1,83 @@
+# USD Composite Fundamental Index Configuration
+
+index_settings:
+  lookback_days: 3650          # How far back to fetch data (10 years)
+  zscore_window: 126           # Rolling window for z-score (approx 6 months)
+  use_robust_zscore: true      # Use Median/MAD instead of Mean/Std
+  winsorize_limits: [0.01, 0.99] # Cap outliers at 1% and 99%
+  aggregation_method: "static" # "static" or "dynamic"
+
+# FRED Series Configuration
+# id: FRED Series ID
+# name: Human readable name
+# direction: 1 (positive correlation with USD) or -1 (negative correlation)
+# weight: Initial static weight (relative)
+# transformation: "level", "diff" (1-day change), "roc" (rate of change)
+series:
+  - id: "T10Y2Y"
+    name: "US Yield Curve (10Y-2Y)"
+    direction: 1
+    weight: 0.451
+    transformation: "level"
+    description: "Steepening curve often supports localized growth/inflation expectations relative to ROW, or bear steepening."
+  
+  - id: "DGS2"
+    name: "US 2-Year Yield"
+    direction: 1
+    weight: -0.344 # Inverted in v2 model
+    transformation: "diff"
+    description: "Short-term rate differentials. Negative weight in this regime?"
+
+  - id: "BAMLC0A0CM"
+    name: "US Corporate Spreads"
+    direction: 1 
+    weight: 0.898 # Strong positive relationship now? (Risk Off = USD Buy?)
+    transformation: "level"
+    description: "Widening spreads (risk-off) strongly linked to STRONGER USD in this model (Flight to Safety)."
+
+  - id: "T10YIE"
+    name: "10-Year Breakeven Inflation"
+    direction: 1
+    weight: -0.546
+    transformation: "level"
+    description: "Higher inflation expectations linked to weaker USD."
+
+  - id: "NFCI"
+    name: "Chicago Fed National Financial Conditions Index"
+    direction: 1
+    weight: -0.110
+    transformation: "level"
+    description: "Tighter conditions linked to marginally weaker USD."
+
+  - id: "VIXCLS"
+    name: "VIX Index"
+    direction: 1
+    weight: -0.741
+    transformation: "level"
+    description: "Higher VIX linked to weaker USD (in contrast to Spreads? Complex dynamic)."
+
+  # v2 Additions
+  - id: "DCOILWTICO"
+    name: "WTI Crude Oil"
+    direction: 1
+    weight: 0.019
+    transformation: "diff"
+    description: "Oil Price. Very low impact in this model."
+
+  - id: "DEXUSEU"
+    name: "US / Euro FX Rate"
+    direction: 1 # Note: FRED series is Dollars per Euro. Higher = Weaker USD.
+    weight: 0.109 # Positive weight on 'Weaker USD' signal contribution? 
+    # If DEXUSEU goes up (USD Weak), Z-score goes up. 
+    # If weight is pos, Index goes up. 
+    # But Index > 0 means USD Strength?
+    # So if DEXUSEU Up -> Index Up -> USD Strong? Contradiction.
+    # Calibration says coef is +0.10. 
+    # This implies DEXUSEU and DXY move together?? 
+    # DXY = ~ 1/EUR. They should be inversely correlated.
+    transformation: "diff" 
+    description: "USD/EUR Exchange Rate. Low weight, complex sign."
+
+api:
+  fred_api_key_env_var: "FRED_API_KEY"
+  cache_dir: ".fred_cache"

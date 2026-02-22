@@ -1,0 +1,112 @@
+﻿[PASS] Login
+{
+  "status": "active",
+  "mode": "local",
+  "path": "C:\\MacroLens\\mt5_shared\\user_test_user"
+}
+----------------------------------------
+[PASS] Market Data (Crypto/CCXT)
+{
+  "candles": 5,
+  "indicators": {
+    "rsi_14": 50.0
+  }
+}
+----------------------------------------
+Testing MT5 Data... (May timeout if EA not running)
+[FAIL] Market Data (Forex/MT5)
+[
+  {
+    "symbol": "EURUSD",
+    "time": 1768881600,
+    "brokerTime": "2026-01-20 06:00:00.000",
+    "timeframe": "1h",
+    "open": 1.16566,
+    "close": 1.16657,
+    "high": 1.16665,
+    "low": 1.16561,
+    "tickVolume": 1708,
+    "spread": 0,
+    "endTime": "2026-01-20T04:59:59.999Z",
+    "endBrokerTime": "2026-01-20 04:59:59.999",
+    "state": "complete",
+    "datetime": "2026-01-20T04:00:00+00:00"
+  },
+  {
+    "symbol": "EURUSD",
+    "time": 1768885200,
+    "brokerTime": "2026-01-20 07:00:00.000",
+    "timeframe": "1h",
+    "open": 1.16657,
+    "close": 1.16632,
+    "high": 1.16725,
+    "low": 1.16631,
+    "tickVolume": 1662,
+    "spread": 0,
+    "endTime": "2026-01-20T05:59:59.999Z",
+    "endBrokerTime": "2026-01-20 05:59:59.999",
+    "state": "complete",
+    "datetime": "2026-01-20T05:00:00+00:00"
+  },
+  {
+    "symbol": "EURUSD",
+    "time": 1768888800,
+    "brokerTime": "2026-01-20 08:00:00.000",
+    "timeframe": "1h",
+    "open": 1.16632,
+    "close": 1.16687,
+    "high": 1.16692,
+    "low": 1.1662,
+    "tickVolume": 2352,
+    "spread": 0,
+    "endTime": "2026-01-20T06:59:59.999Z",
+    "endBrokerTime": "2026-01-20 06:59:59.999",
+    "state": "complete",
+    "datetime": "2026-01-20T06:00:00+00:00"
+  },
+  {
+    "symbol": "EURUSD",
+    "time": 1768892400,
+    "brokerTime": "2026-01-20 09:00:00.000",
+    "timeframe": "1h",
+    "open": 1.16686,
+    "close": 1.16887,
+    "high": 1.16938,
+    "low": 1.16641,
+    "tickVolume": 3918,
+    "spread": 0,
+    "endTime": "2026-01-20T07:59:59.999Z",
+    "endBrokerTime": "2026-01-20 07:59:59.999",
+    "state": "complete",
+    "datetime": "2026-01-20T07:00:00+00:00"
+  },
+  {
+    "symbol": "EURUSD",
+    "time": 1768896000,
+    "brokerTime": "2026-01-20 10:00:00.000",
+    "timeframe": "1h",
+    "open": 1.16887,
+    "close": 1.17199,
+    "high": 1.17217,
+    "low": 1.16873,
+    "tickVolume": 5246,
+    "spread": 0,
+    "endTime": "2026-01-20T08:59:59.999Z",
+    "endBrokerTime": "2026-01-20 08:59:59.999",
+    "state": "intermediate",
+    "datetime": "2026-01-20T08:00:00+00:00"
+  }
+]
+----------------------------------------
+[FAIL] Trade Status
+"{\"detail\":\"No linked trading account found.\"}"
+----------------------------------------
+Testing Trade History (http://127.0.0.1:8000/api)...
+[FAIL] Trade History (Today)
+"{\"detail\":\"No linked trading account found.\"}"
+----------------------------------------
+----------------------------------------
+Testing AI Analysis...
+[FAIL] Analysis Agent
+"Internal Server Error"
+----------------------------------------

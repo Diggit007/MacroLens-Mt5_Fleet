@@ -1,0 +1,492 @@
+==========================================================================================
+ SECTION 1: INDIVIDUAL CURRENCY HEALTH PROFILES
+==========================================================================================
+
+------------------------------------------------------------------------------------------
+  #1 AUD  |  COMPOSITE SCORE: 6.83 / 10  |  Bias: HAWKISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    3.6%
+    GDP Growth:         2.1%
+    Unemployment:       4.5%
+    Interest Rate:      3.85%
+    Real Rate:          0.25%
+    Trade Balance:      3373000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       +0.80  (Accelerating)
+    CPI Momentum:       +0.40  (Inflation Rising)
+    Unemployment Mom:   +0.40  (Labor Cooling)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     9.0  (Weight: 25%)
+    Inflation:  7.5  (Weight: 20%)
+    Monetary:   7.5  (Weight: 25%)
+    Real Rate:  6.0  (Weight: 15%)
+    COT:        2.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       N/A
+    COT Bias:           EXTREME_SHORT
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #2 CAD  |  COMPOSITE SCORE: 5.35 / 10  |  Bias: DOVISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    2.9%
+    GDP Growth:         0.6%
+    Unemployment:       6.5%
+    Interest Rate:      2.25%
+    Real Rate:          -0.65%
+    Trade Balance:      150000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       +1.00  (Accelerating)
+    CPI Momentum:       +0.30  (Inflation Rising)
+    Unemployment Mom:   -0.60  (Labor Tightening)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     6.0  (Weight: 25%)
+    Inflation:  6.5  (Weight: 20%)
+    Monetary:   3.0  (Weight: 25%)
+    Real Rate:  4.0  (Weight: 15%)
+    COT:        8.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       100
+    COT Bias:           EXTREME_LONG
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #3 NZD  |  COMPOSITE SCORE: 5.27 / 10  |  Bias: DOVISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    3.0%
+    GDP Growth:         1.1%
+    Unemployment:       5.4%
+    Interest Rate:      2.25%
+    Real Rate:          -0.75%
+    Trade Balance:      52000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       +0.40  (Accelerating)
+    CPI Momentum:       +0.80  (Inflation Rising)
+    Unemployment Mom:   N/A  
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     8.5  (Weight: 25%)
+    Inflation:  7.5  (Weight: 20%)
+    Monetary:   3.0  (Weight: 25%)
+    Real Rate:  4.0  (Weight: 15%)
+    COT:        2.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       N/A
+    COT Bias:           EXTREME_SHORT
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #4 JPY  |  COMPOSITE SCORE: 5.17 / 10  |  Bias: HAWKISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    2.0%
+    GDP Growth:         -0.6%
+    Unemployment:       2.6%
+    Interest Rate:      0.5%
+    Real Rate:          -1.5%
+    Trade Balance:      -117500000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       -0.20  (Decelerating)
+    CPI Momentum:       -0.20  (Disinflation)
+    Unemployment Mom:   N/A  
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     5.5  (Weight: 25%)
+    Inflation:  4.5  (Weight: 20%)
+    Monetary:   5.0  (Weight: 25%)
+    Real Rate:  3.0  (Weight: 15%)
+    COT:        8.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       100
+    COT Bias:           EXTREME_LONG
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #5 USD  |  COMPOSITE SCORE: 5.15 / 10  |  Bias: DOVISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    2.6%
+    GDP Growth:         4.3%
+    Unemployment:       8.0%
+    Interest Rate:      3.75%
+    Real Rate:          1.15%
+    Trade Balance:      -2200000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       +1.30  (Accelerating)
+    CPI Momentum:       -0.40  (Disinflation)
+    Unemployment Mom:   +3.40  (Labor Cooling)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     6.5  (Weight: 25%)
+    Inflation:  6.5  (Weight: 20%)
+    Monetary:   3.5  (Weight: 25%)
+    Real Rate:  7.0  (Weight: 15%)
+    COT:        2.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       N/A
+    COT Bias:           EXTREME_SHORT
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #6 GBP  |  COMPOSITE SCORE: 4.20 / 10  |  Bias: DOVISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    3.2%
+    GDP Growth:         0.1%
+    Unemployment:       5.1%
+    Interest Rate:      3.75%
+    Real Rate:          0.55%
+    Trade Balance:      -22540000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       -1.20  (Decelerating)
+    CPI Momentum:       -0.90  (Disinflation)
+    Unemployment Mom:   +0.40  (Labor Cooling)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     3.5  (Weight: 25%)
+    Inflation:  5.0  (Weight: 20%)
+    Monetary:   4.5  (Weight: 25%)
+    Real Rate:  6.0  (Weight: 15%)
+    COT:        2.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       N/A
+    COT Bias:           EXTREME_SHORT
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #7 CHF  |  COMPOSITE SCORE: 3.83 / 10  |  Bias: DOVISH
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    0.1%
+    GDP Growth:         -0.5%
+    Unemployment:       3.2%
+    Interest Rate:      N/A%
+    Real Rate:          N/A%
+    Trade Balance:      1036000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       -1.70  (Decelerating)
+    CPI Momentum:       N/A  
+    Unemployment Mom:   +0.30  (Labor Cooling)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     3.5  (Weight: 25%)
+    Inflation:  2.5  (Weight: 20%)
+    Monetary:   2.0  (Weight: 25%)
+    Real Rate:  5.0  (Weight: 15%)
+    COT:        8.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       100
+    COT Bias:           EXTREME_LONG
+    Smart Money Net:    N/A
+
+------------------------------------------------------------------------------------------
+  #8 EUR  |  COMPOSITE SCORE: 3.70 / 10  |  Bias: NEUTRAL
+------------------------------------------------------------------------------------------
+  RAW DATA:
+    CPI (Inflation):    1.0%
+    GDP Growth:         0.3%
+    Unemployment:       7.9%
+    Interest Rate:      2.15%
+    Real Rate:          1.15%
+    Trade Balance:      -4800000000.0
+
+  MOMENTUM (3-Month Slope):
+    GDP Momentum:       -0.50  (Decelerating)
+    CPI Momentum:       +0.70  (Inflation Rising)
+    Unemployment Mom:   +1.60  (Labor Cooling)
+
+  FACTOR SUB-SCORES (each 0-10):
+    Growth:     0.5  (Weight: 25%)
+    Inflation:  5.5  (Weight: 20%)
+    Monetary:   4.5  (Weight: 25%)
+    Real Rate:  7.0  (Weight: 15%)
+    COT:        2.0  (Weight: 15%)
+
+  COT POSITIONING:
+    Willco Index:       N/A
+    COT Bias:           EXTREME_SHORT
+    Smart Money Net:    N/A
+
+
+==========================================================================================
+ SECTION 2: DIVERGENCE MATRIX (ALL 21 PAIRS)
+==========================================================================================
+
+------------------------------------------------------------------------------------------
+  #1 EURAUD  SHORT  |  Divergence: 3.13  |  Conviction: HIGH
+------------------------------------------------------------------------------------------
+  Base Score:       3.7
+  Quote Score:      6.83
+  Carry Spread:     0.9%
+  Momentum Delta:   -1.3
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > EUR (3.7). AUD Growth is robust. AUD Yields attractive. EUR Growth slowing. Carry: 0.9% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #2 AUDCHF  LONG  |  Divergence: 3.0  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       6.83
+  Quote Score:      3.83
+  Carry Spread:     0.25%
+  Momentum Delta:   2.5
+  COT Aligned:      False
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > CHF (3.83). AUD Growth is robust. AUD Yields attractive. CHF Growth slowing. CHF Dovish/Disinflationary. COT Divergence (Inst not fully aligned).
+
+------------------------------------------------------------------------------------------
+  #3 GBPAUD  SHORT  |  Divergence: 2.63  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       4.2
+  Quote Score:      6.83
+  Carry Spread:     0.3%
+  Momentum Delta:   -2.0
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > GBP (4.2). AUD Growth is robust. AUD Yields attractive. GBP Growth slowing. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #4 AUDUSD  LONG  |  Divergence: 1.68  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       6.83
+  Quote Score:      5.15
+  Carry Spread:     -0.9%
+  Momentum Delta:   -0.5
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > USD (5.15). AUD Growth is robust. AUD Yields attractive. Carry: 0.9% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #5 AUDJPY  LONG  |  Divergence: 1.66  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       6.83
+  Quote Score:      5.17
+  Carry Spread:     1.75%
+  Momentum Delta:   1.0
+  COT Aligned:      False
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > JPY (5.17). AUD Growth is robust. AUD Yields attractive. Carry: 1.8% benefit. COT Divergence (Inst not fully aligned).
+
+------------------------------------------------------------------------------------------
+  #6 EURCAD  SHORT  |  Divergence: 1.65  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       3.7
+  Quote Score:      5.35
+  Carry Spread:     1.8%
+  Momentum Delta:   -1.5
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        CAD (5.35) > EUR (3.7). EUR Growth slowing. Carry: 1.8% benefit. Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #7 AUDNZD  LONG  |  Divergence: 1.56  |  Conviction: MEDIUM
+------------------------------------------------------------------------------------------
+  Base Score:       6.83
+  Quote Score:      5.27
+  Carry Spread:     1.0%
+  Momentum Delta:   0.4
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > NZD (5.27). AUD Growth is robust. AUD Yields attractive. Carry: 1.0% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #8 AUDCAD  LONG  |  Divergence: 1.48  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       6.83
+  Quote Score:      5.35
+  Carry Spread:     0.9%
+  Momentum Delta:   -0.2
+  COT Aligned:      False
+  Corr. Warning:    None
+  RATIONALE:        AUD (6.83) > CAD (5.35). AUD Growth is robust. AUD Yields attractive. Carry: 0.9% benefit. COT Divergence (Inst not fully aligned).
+
+------------------------------------------------------------------------------------------
+  #9 EURJPY  SHORT  |  Divergence: 1.47  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       3.7
+  Quote Score:      5.17
+  Carry Spread:     2.65%
+  Momentum Delta:   -0.3
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        JPY (5.17) > EUR (3.7). EUR Growth slowing. Carry: 2.6% benefit. Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #10 EURUSD  SHORT  |  Divergence: 1.45  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       3.7
+  Quote Score:      5.15
+  Carry Spread:     0.0%
+  Momentum Delta:   -1.8
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        USD (5.15) > EUR (3.7). USD Growth is robust. EUR Growth slowing. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #11 USDCHF  LONG  |  Divergence: 1.32  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.15
+  Quote Score:      3.83
+  Carry Spread:     1.15%
+  Momentum Delta:   3.0
+  COT Aligned:      False
+  Corr. Warning:    None
+  RATIONALE:        USD (5.15) > CHF (3.83). USD Growth is robust. CHF Growth slowing. CHF Dovish/Disinflationary. Carry: 1.1% benefit. COT Divergence (Inst not fully aligned).
+
+------------------------------------------------------------------------------------------
+  #12 GBPCAD  SHORT  |  Divergence: 1.15  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       4.2
+  Quote Score:      5.35
+  Carry Spread:     1.2%
+  Momentum Delta:   -2.2
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        CAD (5.35) > GBP (4.2). GBP Growth slowing. Carry: 1.2% benefit. Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #13 GBPNZD  SHORT  |  Divergence: 1.07  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       4.2
+  Quote Score:      5.27
+  Carry Spread:     1.3%
+  Momentum Delta:   -1.6
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        NZD (5.27) > GBP (4.2). NZD Growth is robust. GBP Growth slowing. Carry: 1.3% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #14 GBPJPY  SHORT  |  Divergence: 0.97  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       4.2
+  Quote Score:      5.17
+  Carry Spread:     2.05%
+  Momentum Delta:   -1.0
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        JPY (5.17) > GBP (4.2). GBP Growth slowing. Carry: 2.0% benefit. Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #15 GBPUSD  SHORT  |  Divergence: 0.95  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       4.2
+  Quote Score:      5.15
+  Carry Spread:     -0.6%
+  Momentum Delta:   -2.5
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        USD (5.15) > GBP (4.2). USD Growth is robust. GBP Growth slowing. Carry: 0.6% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #16 EURGBP  SHORT  |  Divergence: 0.5  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       3.7
+  Quote Score:      4.2
+  Carry Spread:     0.6%
+  Momentum Delta:   0.7
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        GBP (4.2) > EUR (3.7). EUR Growth slowing. Carry: 0.6% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #17 USDCAD  SHORT  |  Divergence: 0.2  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.15
+  Quote Score:      5.35
+  Carry Spread:     1.8%
+  Momentum Delta:   0.3
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        CAD (5.35) > USD (5.15). Carry: 1.8% benefit. Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #18 NZDUSD  LONG  |  Divergence: 0.12  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.27
+  Quote Score:      5.15
+  Carry Spread:     -1.9%
+  Momentum Delta:   -0.9
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        NZD (5.27) > USD (5.15). NZD Growth is robust. Carry: 1.9% benefit. Institutions aligned (Willco 0 vs 0).
+
+------------------------------------------------------------------------------------------
+  #19 NZDJPY  LONG  |  Divergence: 0.1  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.27
+  Quote Score:      5.17
+  Carry Spread:     0.75%
+  Momentum Delta:   0.6
+  COT Aligned:      False
+  Corr. Warning:    None
+  RATIONALE:        NZD (5.27) > JPY (5.17). NZD Growth is robust. Carry: 0.8% benefit. COT Divergence (Inst not fully aligned).
+
+------------------------------------------------------------------------------------------
+  #20 NZDCAD  SHORT  |  Divergence: 0.08  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.27
+  Quote Score:      5.35
+  Carry Spread:     -0.1%
+  Momentum Delta:   -0.6
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        CAD (5.35) > NZD (5.27). Institutions aligned (Willco 100 vs 0).
+
+------------------------------------------------------------------------------------------
+  #21 USDJPY  SHORT  |  Divergence: 0.02  |  Conviction: LOW
+------------------------------------------------------------------------------------------
+  Base Score:       5.15
+  Quote Score:      5.17
+  Carry Spread:     2.65%
+  Momentum Delta:   1.5
+  COT Aligned:      True
+  Corr. Warning:    None
+  RATIONALE:        JPY (5.17) > USD (5.15). Carry: 2.6% benefit. Institutions aligned (Willco 100 vs 0).
+
+
+==========================================================================================
+ SECTION 3: DEEP DIVE -- EURAUD
+==========================================================================================
+
+  FACTOR                    |        EUR |        AUD |       EDGE
+  ------------------------------------------------------------
+  Health Score              |       3.70 |       6.83 |        AUD
+  Growth Score              |       0.50 |       9.00 |        AUD
+  Inflation Score           |       5.50 |       7.50 |        AUD
+  Monetary Score            |       4.50 |       7.50 |        AUD
+  Real Rate Score           |       7.00 |       6.00 |        EUR
+  COT Score                 |       2.00 |       2.00 |       EVEN
+  Real Rate                 |       1.15 |       0.25 |        EUR
+  GDP Momentum              |      -0.50 |       0.80 |        AUD
+  CPI Momentum              |       0.70 |       0.40 |        EUR
+  PMI (Mfg)                 |      49.50 |      52.30 |        AUD
+  Core CPI                  |       2.20 |       3.30 |        AUD
+  Debt/GDP                  |      87.10 |      43.80 |        EUR
+
+  VERDICT: SHORT EURAUD
+  CONVICTION: HIGH
+  CARRY: 0.9% (Real Rate Differential)
+  THESIS: AUD (6.83) > EUR (3.7). AUD Growth is robust. AUD Yields attractive. EUR Growth slowing. Carry: 0.9% benefit. Institutions aligned (Willco 0 vs 0).
+
+==========================================================================================
+ END OF REPORT
+==========================================================================================

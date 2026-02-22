@@ -1,0 +1,37 @@
+[
+  {
+    "time": "2026-01-30 15:00:00",
+    "signal": "SELL",
+    "confidence": 75,
+    "price": 1.18912,
+    "reason": "..."
+  },
+  {
+    "time": "2026-01-30 16:00:00",
+    "signal": "SELL",
+    "confidence": 75,
+    "price": 1.18881,
+    "reason": "..."
+  },
+  {
+    "time": "2026-01-30 17:00:00",
+    "signal": "SELL",
+    "confidence": 70,
+    "price": 1.18835,
+    "reason": "..."
+  },
+  {
+    "time": "2026-01-30 18:00:00",
+    "signal": "SELL",
+    "confidence": 70,
+    "price": 1.18703,
+    "reason": "..."
+  },
+  {
+    "time": "2026-01-30 19:00:00",
+    "signal": "SELL",
+    "confidence": 75,
+    "price": 1.18814,
+    "reason": "..."
+  }
+]
