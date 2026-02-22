@@ -20,3 +20,5 @@ python-socketio
 chromadb
 python-telegram-bot
 email-validator
+fredapi
+statsmodels
