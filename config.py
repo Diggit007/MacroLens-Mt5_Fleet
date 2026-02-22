@@ -5,7 +5,7 @@ from pathlib import Path
 
 class Settings(BaseSettings):
     # Security
-    META_API_TOKEN: SecretStr = Field(..., description="MetaApi Cloud Token")
+    META_API_TOKEN: Optional[SecretStr] = None  # Legacy, kept for backward compat
     OPENAI_API_KEY: Optional[SecretStr] = None  # Legacy, kept for backward compat
     NVIDIA_API_KEY: Optional[SecretStr] = None  # For Kimi K2.5
     DEEPSEEK_API_KEY: Optional[SecretStr] = None  # For DeepSeek V3
