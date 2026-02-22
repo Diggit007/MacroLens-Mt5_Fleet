@@ -194,6 +194,26 @@ async def get_account_information(account_id):
     except Exception as e:
         return {"status": "error", "error": str(e)}
 
+async def get_symbol_price(account_id, symbol):
+    try:
+        creds = await _get_credentials(account_id)
+        login = creds["login"]
+        await get_account(account_id)
+        
+        resolved_symbol = await resolve_symbol(account_id, symbol)
+        resp = await client.get(f"{FLEET_MANAGER_URL}/accounts/{login}/symbol/{resolved_symbol}")
+        if resp.status_code == 200:
+            data = resp.json()
+            return {
+                "bid": data.get("bid", 0),
+                "ask": data.get("ask", 0),
+                "symbol": resolved_symbol
+            }
+        return {"bid": 0, "ask": 0, "symbol": resolved_symbol}
+    except Exception as e:
+        logger.error(f"Fetch Price Error: {e}")
+        return {"bid": 0, "ask": 0, "symbol": symbol}
+
 async def fetch_candles(account_id, symbol, timeframe="1h", limit=500):
      try:
          creds = await _get_credentials(account_id)
