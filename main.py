@@ -171,6 +171,9 @@ async def schedule_market_data_updates():
             await update_hourly_tasks()
             
             # 2. Run 24-Hour Tasks (Retail Sentiment) - ONCE PER DAY
+            if not hasattr(schedule_market_data_updates, 'counter'):
+                schedule_market_data_updates.counter = 0
+            
             if schedule_market_data_updates.counter % 24 == 0:
                 logger.info("Running Daily Tasks (Retail Sentiment)...")
                 await update_retail_tasks()

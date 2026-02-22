@@ -188,6 +188,10 @@ class TradeManagerService:
     async def _check_all_users(self):
         """Check all users concurrently (limited by Semaphore)"""
         try:
+            if not db:
+                logger.warning("Firestore DB not available. Trade Manager polling disabled.")
+                return
+                
             # Get all users with Trade Manager enabled
             users_ref = db.collection("users")
             docs = users_ref.stream()
