@@ -55,8 +55,7 @@ from backend.services.metaapi_service import (
     fetch_candles as meta_fetch_candles,
     get_account_information as meta_get_account_info,
     fetch_history as meta_fetch_history,
-    get_symbol_price as meta_get_symbol_price,
-    get_all_symbols as meta_get_all_symbols
+    get_symbol_price as meta_get_symbol_price
 )
 from backend.services.streaming_service import stream_manager
 from backend.services.trade_manager_service import trade_manager
