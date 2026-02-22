@@ -22,3 +22,4 @@ python-telegram-bot
 email-validator
 fredapi
 statsmodels
+python-multipart
