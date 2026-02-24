@@ -37,7 +37,8 @@ async def lifespan(app: FastAPI):
         login=args.account,
         password=args.password,
         server=args.server,
-        portable=True
+        portable=True,
+        timeout=120000 # 120 seconds timeout to prevent IPC crashes on slow VPS boots
     )
     
     if not initialized:
