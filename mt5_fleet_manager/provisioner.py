@@ -21,7 +21,7 @@ class FleetProvisioner:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             return s.getsockname()[1]
 
-    async def provision_terminal(self, account: str, password: str, server: str) -> dict:
+    async def provision_terminal(self, account: str, password: str, server: str, user_id: str = "") -> dict:
         """
         1. Clones the MT5 directory securely for the specific account.
         2. Spawns the worker.py subprocess pointing to this installation.
@@ -56,6 +56,8 @@ class FleetProvisioner:
             "--server", str(server),
             "--path", terminal_exe
         ]
+        if user_id:
+            cmd.extend(["--user_id", str(user_id)])
         
         logger.info(f"Launching worker for account {account} on port {worker_port}")
         

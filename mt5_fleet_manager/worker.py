@@ -1,9 +1,11 @@
 import argparse
 import asyncio
 import logging
+import os
+import time as _time
 from contextlib import asynccontextmanager
-from typing import Optional, Dict, Any, List
-from datetime import datetime
+from typing import Optional, Dict, Any, List, Set
+from datetime import datetime, timedelta
 import json
 import uvicorn
 from fastapi import FastAPI, HTTPException, Request
@@ -20,17 +22,226 @@ parser.add_argument("--account", type=int, required=True)
 parser.add_argument("--password", type=str, required=True)
 parser.add_argument("--server", type=str, required=True)
 parser.add_argument("--path", type=str, required=True)
+parser.add_argument("--user_id", type=str, default="")  # Firebase UID for Firestore sync
 args, _ = parser.parse_known_args()
 
 # --- GLOBALS ---
 MT5_READY = False
+_firestore_db = None
+_position_snapshot: Set[int] = set()  # Track open position tickets
 
+# ============================================================
+# FIRESTORE SETUP (Optional — only if user_id is provided)
+# ============================================================
+def _init_firestore():
+    """Initialize Firebase Admin SDK for writing trade history"""
+    global _firestore_db
+    if not args.user_id:
+        logger.info("No --user_id provided, Firestore sync disabled.")
+        return None
+    try:
+        import firebase_admin
+        from firebase_admin import credentials, firestore as fs
+        
+        # Look for service account key in multiple locations
+        key_paths = [
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "serviceAccountKey.json"),
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "serviceAccountKey.json"),
+        ]
+        key_path = None
+        for p in key_paths:
+            if os.path.exists(p):
+                key_path = p
+                break
+        
+        if not key_path:
+            logger.warning("serviceAccountKey.json not found — Firestore sync disabled.")
+            return None
+        
+        # Only initialize if not already done
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(key_path)
+            firebase_admin.initialize_app(cred)
+        
+        _firestore_db = fs.client()
+        logger.info(f"✅ Firestore initialized for user {args.user_id}")
+        return _firestore_db
+    except Exception as e:
+        logger.warning(f"Firestore init failed (non-fatal): {e}")
+        return None
+
+
+# ============================================================
+# TRADE HISTORY SYNC
+# ============================================================
+def _deal_to_firestore_doc(entry_deal, exit_deal) -> dict:
+    """Convert a matched pair of MT5 deals (entry+exit) into a Firestore document"""
+    gross_profit = float(exit_deal.profit)
+    swap = float(exit_deal.swap)
+    commission = float(entry_deal.commission) + float(exit_deal.commission)
+    net_pnl = gross_profit + swap + commission
+    
+    return {
+        "positionId": str(exit_deal.position_id),
+        "symbol": entry_deal.symbol,
+        "type": "BUY" if entry_deal.type == 0 else "SELL",
+        "volume": float(entry_deal.volume),
+        "openPrice": float(entry_deal.price),
+        "closePrice": float(exit_deal.price),
+        "openTime": datetime.utcfromtimestamp(entry_deal.time).isoformat() + "Z",
+        "closeTime": datetime.utcfromtimestamp(exit_deal.time).isoformat() + "Z",
+        "profit": gross_profit,
+        "swap": swap,
+        "commission": commission,
+        "netPnl": net_pnl,
+        "mt5Login": str(args.account),
+        "status": "CLOSED",
+        "ticket": int(exit_deal.order),
+        "magic": int(entry_deal.magic),
+        "comment": exit_deal.comment or entry_deal.comment or "",
+    }
+
+
+def sync_history_to_firestore(days_back: int = 90):
+    """Pull MT5 deal history and write completed trades to Firestore"""
+    if not _firestore_db or not args.user_id:
+        return 0
+    
+    try:
+        now = datetime.utcnow()
+        start = now - timedelta(days=days_back)
+        deals = mt5.history_deals_get(start, now)
+        
+        if not deals:
+            logger.info("No history deals found in MT5.")
+            return 0
+        
+        # Group deals by position_id
+        deals_by_pos = {}
+        for d in deals:
+            pid = d.position_id
+            if pid == 0:
+                continue  # Skip balance/credit operations
+            if pid not in deals_by_pos:
+                deals_by_pos[pid] = []
+            deals_by_pos[pid].append(d)
+        
+        # Match entry (type IN=0) with exit (type OUT=1 or INOUT=2)
+        batch_count = 0
+        collection_ref = _firestore_db.collection("users").document(args.user_id).collection("trade_history")
+        
+        batch = _firestore_db.batch()
+        for pid, pos_deals in deals_by_pos.items():
+            entry = next((d for d in pos_deals if d.entry == 0), None)  # DEAL_ENTRY_IN
+            exit_d = next((d for d in pos_deals if d.entry in (1, 2)), None)  # DEAL_ENTRY_OUT or INOUT
+            
+            if entry and exit_d:
+                doc_data = _deal_to_firestore_doc(entry, exit_d)
+                doc_ref = collection_ref.document(str(pid))
+                batch.set(doc_ref, doc_data, merge=True)
+                batch_count += 1
+                
+                # Firestore batch limit = 500
+                if batch_count % 450 == 0:
+                    batch.commit()
+                    batch = _firestore_db.batch()
+        
+        if batch_count % 450 != 0:
+            batch.commit()
+        
+        logger.info(f"✅ Synced {batch_count} historical trades to Firestore for user {args.user_id}")
+        return batch_count
+        
+    except Exception as e:
+        logger.error(f"History sync failed: {e}")
+        return 0
+
+
+async def _position_monitor_loop():
+    """Background task: detect closed positions and write them to Firestore"""
+    global _position_snapshot
+    
+    if not _firestore_db or not args.user_id:
+        return
+    
+    logger.info("🔄 Position monitor started")
+    
+    # Initial snapshot
+    await asyncio.sleep(5)
+    positions = mt5.positions_get()
+    if positions:
+        _position_snapshot = {p.ticket for p in positions}
+    
+    while True:
+        try:
+            await asyncio.sleep(3)  # Check every 3 seconds
+            
+            if not MT5_READY:
+                continue
+            
+            current_positions = mt5.positions_get()
+            current_tickets = set()
+            if current_positions:
+                current_tickets = {p.ticket for p in current_positions}
+            
+            # Detect closed positions (were in snapshot, now gone)
+            closed_tickets = _position_snapshot - current_tickets
+            
+            if closed_tickets:
+                logger.info(f"🔔 Detected {len(closed_tickets)} closed position(s): {closed_tickets}")
+                
+                # Fetch the deals for these closed positions
+                now = datetime.utcnow()
+                start = now - timedelta(minutes=10)  # Look back 10 min for the deal
+                deals = mt5.history_deals_get(start, now)
+                
+                if deals:
+                    deals_by_pos = {}
+                    for d in deals:
+                        if d.position_id == 0:
+                            continue
+                        if d.position_id not in deals_by_pos:
+                            deals_by_pos[d.position_id] = []
+                        deals_by_pos[d.position_id].append(d)
+                    
+                    collection_ref = _firestore_db.collection("users").document(args.user_id).collection("trade_history")
+                    
+                    for pid, pos_deals in deals_by_pos.items():
+                        entry = next((d for d in pos_deals if d.entry == 0), None)
+                        exit_d = next((d for d in pos_deals if d.entry in (1, 2)), None)
+                        
+                        if exit_d:
+                            # For the entry, also look further back if not found in 10-min window
+                            if not entry:
+                                all_deals = mt5.history_deals_get(now - timedelta(days=90), now)
+                                if all_deals:
+                                    entry = next((d for d in all_deals if d.position_id == pid and d.entry == 0), None)
+                            
+                            if entry and exit_d:
+                                doc_data = _deal_to_firestore_doc(entry, exit_d)
+                                collection_ref.document(str(pid)).set(doc_data, merge=True)
+                                logger.info(f"✅ Wrote closed trade {pid} ({entry.symbol}) PnL: {doc_data['netPnl']:.2f}")
+            
+            # Update snapshot
+            _position_snapshot = current_tickets
+            
+        except Exception as e:
+            logger.error(f"Position monitor error: {e}")
+            await asyncio.sleep(5)
+
+
+# ============================================================
+# FASTAPI APP
+# ============================================================
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global MT5_READY
     logger.info(f"Initializing MT5 terminal from {args.path}")
     
-    # 1. Initialize MT5
+    # 1. Initialize Firestore (non-blocking, optional)
+    _init_firestore()
+    
+    # 2. Initialize MT5
     # The portable flag ensures it uses the local folder for data
     initialized = mt5.initialize(
         path=args.path,
@@ -58,9 +269,8 @@ async def lifespan(app: FastAPI):
             # 3. Minimize the GUI to save system rendering resources!
             try:
                 import ctypes
-                import time
                 # Give the window a second to physically render before minimizing
-                time.sleep(2)
+                _time.sleep(2)
                 user32 = ctypes.windll.user32
                 # The internal Win32 class name for the MT5 terminal
                 hwnd = user32.FindWindowW("MetaQuotes::MetaTrader::5.00", None)
@@ -69,6 +279,16 @@ async def lifespan(app: FastAPI):
                     logger.info("Terminal window successfully minimized.")
             except Exception as e:
                 logger.warning(f"Could not minimize window: {e}")
+            
+            # 4. Sync full history to Firestore (runs once on connect)
+            if _firestore_db and args.user_id:
+                try:
+                    sync_history_to_firestore(days_back=90)
+                except Exception as e:
+                    logger.error(f"Initial history sync failed (non-fatal): {e}")
+                
+                # 5. Start background position monitor
+                asyncio.create_task(_position_monitor_loop())
                 
         else:
             logger.error(f"MT5 login failed, error code = {mt5.last_error()}")
@@ -100,7 +320,8 @@ async def health():
     return {
         "status": "up" if MT5_READY else "down", 
         "account": args.account,
-        "connected": mt5.terminal_info().connected if MT5_READY and mt5.terminal_info() else False
+        "connected": mt5.terminal_info().connected if MT5_READY and mt5.terminal_info() else False,
+        "firestore_sync": bool(_firestore_db and args.user_id),
     }
 
 @app.get("/account_info")
@@ -135,11 +356,9 @@ def resolve_symbol_local(target: str) -> str:
     symbols = mt5.symbols_get()
     if not symbols:
         return clean
-    # Exact match
     for s in symbols:
         if s.name == clean:
             return s.name
-    # Suffix/Prefix match (e.g., EURUSDx, xEURUSD, EURUSD.raw)
     for s in symbols:
         if clean in s.name and len(s.name) <= len(clean) + 4:
             return s.name
@@ -234,6 +453,16 @@ async def execute_trade(req: Request):
         return {"success": True, "ticket": ticket}
         
     raise HTTPException(status_code=400, detail="Invalid action")
+
+@app.post("/sync_history")
+async def trigger_sync(req: Request):
+    """Manual trigger to re-sync history to Firestore"""
+    if not _firestore_db or not args.user_id:
+        raise HTTPException(status_code=400, detail="Firestore sync not configured (missing --user_id)")
+    body = await req.json() if req.headers.get("content-length", "0") != "0" else {}
+    days = body.get("days_back", 90)
+    count = sync_history_to_firestore(days_back=days)
+    return {"status": "success", "synced_trades": count}
 
 @app.get("/symbols")
 async def get_symbols():
