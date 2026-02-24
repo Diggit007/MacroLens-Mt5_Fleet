@@ -12,7 +12,8 @@ from fastapi import FastAPI, HTTPException, Request
 import MetaTrader5 as mt5
 
 # --- LOGGING ---
-logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] Worker: %(message)s')
+log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "worker_debug.log")
+logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] Worker: %(message)s', filename=log_file, filemode='a')
 logger = logging.getLogger("MT5Worker")
 
 # --- ARGUMENTS ---

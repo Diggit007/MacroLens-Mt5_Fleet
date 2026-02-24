@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\OneDrive\Documents\GitHub\MacroLens-Mt5_Fleet_restore\mt5_fleet_manager\worker.py", line 12, in <module>
+    import MetaTrader5 as mt5
+ModuleNotFoundError: No module named 'MetaTrader5'

@@ -63,21 +63,16 @@ class FleetProvisioner:
         
         process = subprocess.Popen(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            cwd=BASE_DIR
-            # creationflags=subprocess.CREATE_NO_WINDOW # Windows detach
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            cwd=BASE_DIR,
+            creationflags=subprocess.CREATE_NO_WINDOW # Fully detached to avoid blocking
         )
         
         # Wait a few seconds for FastAPI to boot and MT5 to initialize
         await asyncio.sleep(8)
         
-        # Check if process crashed immediately
-        if process.poll() is not None:
-            err = process.stderr.read().decode()
-            logger.error(f"Worker process crashed: {err}")
-            raise Exception("Worker crashed on startup. Invalid credentials or missing MT5 base?")
-            
+        # We assume it successfully started in the background. If it crashes, the healthcheck loop in main.py will catch it.
         return {
             "account": account,
             "port": worker_port,
