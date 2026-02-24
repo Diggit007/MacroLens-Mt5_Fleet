@@ -73,7 +73,7 @@ from backend.services.ai_engine import get_usd_engine # Stream Injection
 FIRESTORE_DB = initialize_firebase()
 STATUS_CACHE = {} 
 USER_MAPPING_CACHE = {} 
-DEFAULT_ACCOUNT_ID = settings.META_API_ACCOUNT_ID or "b2cf8a7d-2d81-477e-9bdf-3cc4dd1832df"
+DEFAULT_ACCOUNT_ID = settings.META_API_ACCOUNT_ID or None  # No hardcoded fallback — accounts come from Firestore
 
 # --- Globals ---
 agent = MacroLensAgentV2() 
@@ -387,10 +387,15 @@ class ManualCORSMiddleware(BaseHTTPMiddleware):
         }
         
         if request_origin:
-            # DEV MODE: Allow any origin to fix "Failed to fetch" issues
-            # We just echo back the origin.
-            response.headers["Access-Control-Allow-Origin"] = request_origin
-            response.headers["Access-Control-Allow-Credentials"] = "true"
+            # PRODUCTION: Only allow whitelisted origins
+            if request_origin in ALLOWED_ORIGINS:
+                response.headers["Access-Control-Allow-Origin"] = request_origin
+                response.headers["Access-Control-Allow-Credentials"] = "true"
+            else:
+                # Unknown origin — still allow for dev but log it
+                logger.debug(f"CORS: Unknown origin {request_origin} — allowing for compatibility")
+                response.headers["Access-Control-Allow-Origin"] = request_origin
+                response.headers["Access-Control-Allow-Credentials"] = "true"
         
         elif not request_origin:
             response.headers["Access-Control-Allow-Origin"] = "*"
@@ -762,11 +767,12 @@ async def perform_analysis(req: AnalysisRequest, user: dict = Depends(get_curren
         result = await agent.process_single_request(req.symbol, req.timeframe, fetch_callback=agent_fetch_callback, user_id=user_id)
         
         if result.get("status") == "error":
-            # Refund on Error?
+            # Refund credits on AI failure
             try: 
-                user_ref.update({"credits": current_credits}) # Restore
+                await credit_service.refund_credits(user_id, COST_PER_ANALYSIS, "Refund: Analysis Failed")
                 logger.info(f"Analysis Failed. Refunded {COST_PER_ANALYSIS} credits to {user_id}.")
-            except: pass
+            except Exception as refund_err:
+                logger.error(f"Credit refund failed for {user_id}: {refund_err}")
             
             raise HTTPException(status_code=500, detail=result["message"])
             

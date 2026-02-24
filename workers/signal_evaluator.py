@@ -18,7 +18,7 @@ async def start_signal_evaluator():
         return
 
     analysis_ref = db.collection("analysis_requests")
-    default_account_id = settings.META_API_ACCOUNT_ID or "b2cf8a7d-2d81-477e-9bdf-3cc4dd1832df"
+    default_account_id = settings.META_API_ACCOUNT_ID or None
 
     print("\n\n" + "="*50)
     print("   SIGNAL EVALUATOR WORKER ALIVE")
@@ -68,6 +68,8 @@ async def start_signal_evaluator():
                 # 2. Fetch Live Price
                 uid = data.get("userId")
                 account_id = data.get("accountId") or default_account_id
+                if not account_id:
+                    continue  # No account available to fetch prices from
                 
                 price_data = await get_symbol_price(account_id, symbol)
                 if not price_data:

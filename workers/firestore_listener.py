@@ -176,7 +176,7 @@ async def start_firestore_listener(fetch_bridge_candles_func, execute_trade_func
                         logger.error(f"Command {cmd_id} Failed: {e}")
                         doc.reference.update({"status": "ERROR", "error": str(e)})
 
-            # --- 3. Process New MT5 Accounts (Provisioning) ---
+            # --- 3. Process New MT5 Accounts (Provisioning via Fleet Manager) ---
             accounts_ref = db.collection("mt5_accounts")
             account_docs = accounts_ref.where("status", "==", "PENDING").limit(5).stream()
             
@@ -194,42 +194,54 @@ async def start_firestore_listener(fetch_bridge_candles_func, execute_trade_func
                     login = data.get("login")
                     password = data.get("password")
                     server = data.get("server")
-                    platform = data.get("platform", "mt5")
                     
                     if not all([login, password, server]):
                         raise Exception("Missing login, password, or server")
 
-                    # 2. Prevent Duplicate Provisioning (Check by login if needed, but here we trust the doc)
+                    # 2. Connect via Fleet Manager API
+                    import httpx
+                    import os
+                    fleet_url = os.getenv("FLEET_MANAGER_URL", "http://158.220.82.187:8000")
                     
-                    # 3. Create Account via MetaApi
-                    # Import Singleton inside loop/function to avoid circular deps if any, though top-level is fine
-                    from backend.core.meta_api_client import meta_api_singleton
-                    api = meta_api_singleton.get_instance()
+                    # 2a. Pre-flight: Check if Fleet Manager is reachable
+                    async with httpx.AsyncClient(timeout=5.0) as probe:
+                        try:
+                            health = await probe.get(f"{fleet_url}/health")
+                        except Exception:
+                            raise Exception(f"Fleet Manager at {fleet_url} is offline. Will retry later.")
                     
-                    # Create "Cloud" account which runs on MetaApi servers
-                    new_account = await api.metatrader_account_api.create_account({
-                        "name": f"User {user_id} - {login}",
-                        "type": "cloud", # Standard Cloud Type
-                        "login": str(login),
-                        "password": password,
-                        "server": server,
-                        "platform": platform,
-                        "magic": 1000 # Default Magic
-                    })
+                    async with httpx.AsyncClient(timeout=30.0) as http_client:
+                        resp = await http_client.post(f"{fleet_url}/connect", json={
+                            "account_id": str(login),
+                            "password": password,
+                            "server": server
+                        })
                     
-                    # 4. Success - Update Firestore
-                    logger.info(f"Account Created: {new_account.id}")
+                    if resp.status_code != 200:
+                        raise Exception(f"Fleet Manager connection failed: {resp.text}")
                     
+                    fleet_result = resp.json()
+                    logger.info(f"Fleet Manager connected account {login}: {fleet_result.get('status')}")
+                    
+                    # Handle "pending" status (MT5 still booting)
+                    if fleet_result.get("status") == "pending":
+                        logger.info(f"Account {login} is still booting on Fleet Manager. Will check again later.")
+                        doc.reference.update({"status": "PENDING"})  # Reset to PENDING to retry
+                        continue
+                    
+                    # 3. Success - Update Firestore
+                    # Use the Firestore doc ID as the account reference, store login for Fleet Manager lookups
                     doc.reference.update({
                         "status": "COMPLETED",
-                        "accountId": new_account.id, # CRITICAL: This is what the frontend needs
+                        "accountId": doc_id,
+                        "fleetLogin": str(login),
                         "provisionedAt": datetime.utcnow().isoformat()
                     })
                     
-                    # 5. Optional: Auto-Set as Active for User
+                    # 4. Auto-Set as Active for User
                     try:
                         user_ref = db.collection("users").document(user_id)
-                        user_ref.update({"activeAccountId": new_account.id})
+                        user_ref.update({"activeAccountId": doc_id})
                     except: pass
                     
                 except Exception as e:

@@ -95,7 +95,7 @@ class FleetPollingListener:
 class StreamingManager:
     def __init__(self):
         self.listeners = {}
-        self.default_account_id = "b2cf8a7d-2d81-477e-9bdf-3cc4dd1832df"
+        self.default_account_id = None  # Accounts are resolved from Firestore
         self._lock = asyncio.Lock()
         self._cleanup_task = None
 
@@ -153,7 +153,6 @@ class StreamingManager:
         return True
 
     def get_latest_state(self, account_id):
-        if account_id == "2oCCIawGhcpflqdPguRl": account_id = self.default_account_id
         if account_id in self.listeners:
             listener = self.listeners[account_id]
             listener.last_accessed = time.time()

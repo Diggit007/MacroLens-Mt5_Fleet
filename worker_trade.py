@@ -30,7 +30,7 @@ FIRESTORE_DB = initialize_firebase()
 USER_MAPPING_CACHE = {} 
 from backend.core.cache import cache
 from backend.config import settings
-DEFAULT_ACCOUNT_ID = settings.META_API_ACCOUNT_ID or "b2cf8a7d-2d81-477e-9bdf-3cc4dd1832df"
+DEFAULT_ACCOUNT_ID = settings.META_API_ACCOUNT_ID or None
 
 # Services
 from backend.services.trade_manager_service import trade_manager

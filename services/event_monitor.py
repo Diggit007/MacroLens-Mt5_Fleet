@@ -110,15 +110,16 @@ class EventMonitorService:
             
             if symbol:
                 try:
-                    # Fetch M15 candles for RSI
+                    # Fetch M15 candles for RSI — requires a connected account
                     account_id = settings.META_API_ACCOUNT_ID
                     if account_id:
                         candles = await fetch_candles(account_id, symbol, "15m", limit=30)
                         if candles:
                             analyzer = TechnicalAnalyzer(candles)
                             technicals["rsi"] = analyzer.get_rsi(14)
-                            # Could add Bollinger here too if needed
                             logger.info(f"📊 Technicals for {symbol}: RSI={technicals.get('rsi')}")
+                    else:
+                        logger.debug(f"No default account configured — skipping technical overlay for {symbol}")
                 except Exception as e:
                     logger.error(f"Failed to fetch technicals: {e}")
 

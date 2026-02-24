@@ -81,6 +81,9 @@ async def get_account(account_id: str):
          # Return a stub that mimics old `{'connection': ...}` logic loosely, 
          # but actually we'll rewrite the consuming functions below to not need it.
          return {"account_id": login, "status": data.get("status")}
+    except httpx.ConnectError:
+         logger.error(f"Fleet Manager at {FLEET_MANAGER_URL} is OFFLINE. Cannot connect account {login}.")
+         raise Exception("Trading server is currently offline. Please try again later.")
     except Exception as e:
          logger.error(f"Failed to connect terminal {login}: {e}")
          raise
