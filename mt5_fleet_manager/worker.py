@@ -53,6 +53,22 @@ async def lifespan(app: FastAPI):
         if authorized:
             logger.info(f"MT5 Login Success for {args.account} on {args.server}")
             MT5_READY = True
+            
+            # 3. Minimize the GUI to save system rendering resources!
+            try:
+                import ctypes
+                import time
+                # Give the window a second to physically render before minimizing
+                time.sleep(2)
+                user32 = ctypes.windll.user32
+                # The internal Win32 class name for the MT5 terminal
+                hwnd = user32.FindWindowW("MetaQuotes::MetaTrader::5.00", None)
+                if hwnd:
+                    user32.ShowWindow(hwnd, 6) # 6 = SW_MINIMIZE
+                    logger.info("Terminal window successfully minimized.")
+            except Exception as e:
+                logger.warning(f"Could not minimize window: {e}")
+                
         else:
             logger.error(f"MT5 login failed, error code = {mt5.last_error()}")
             MT5_READY = False
