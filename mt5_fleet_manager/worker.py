@@ -127,6 +127,24 @@ async def get_orders():
         return []
     return [o._asdict() for o in orders]
 
+def resolve_symbol_local(target: str) -> str:
+    """Maps generic symbol (e.g. EURUSD) to broker-specific (e.g. EURUSDx)"""
+    if not target:
+        return target
+    clean = target.replace("/", "").upper()
+    symbols = mt5.symbols_get()
+    if not symbols:
+        return clean
+    # Exact match
+    for s in symbols:
+        if s.name == clean:
+            return s.name
+    # Suffix/Prefix match (e.g., EURUSDx, xEURUSD, EURUSD.raw)
+    for s in symbols:
+        if clean in s.name and len(s.name) <= len(clean) + 4:
+            return s.name
+    return clean
+
 @app.post("/execute")
 async def execute_trade(req: Request):
     """
@@ -144,7 +162,7 @@ async def execute_trade(req: Request):
     check_mt5()
     body = await req.json()
     action = body.get("action", "").upper()
-    symbol = body.get("symbol")
+    symbol = resolve_symbol_local(body.get("symbol", ""))
     
     if action in ["BUY", "SELL"]:
         # Prepare Order
