@@ -5,3 +5,4 @@ psutil==5.9.8
 httpx==0.26.0
 pydantic==2.6.1
 python-dotenv==1.0.1
+firebase-admin>=6.2.0

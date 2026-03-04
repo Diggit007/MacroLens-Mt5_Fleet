@@ -33,6 +33,7 @@ class ConnectRequest(BaseModel):
     account_id: str
     password: str
     server: str
+    user_id: str = ""  # Firebase UID for Firestore trade history sync
 
 @app.post("/connect")
 async def connect_terminal(req: ConnectRequest):
@@ -63,7 +64,7 @@ async def connect_terminal(req: ConnectRequest):
         # Start new worker
         if acc not in ACTIVE_WORKERS:
             try:
-                worker_info = await provisioner.provision_terminal(acc, req.password, req.server)
+                worker_info = await provisioner.provision_terminal(acc, req.password, req.server, user_id=req.user_id)
                 ACTIVE_WORKERS[acc] = worker_info
                 return {"status": "success", "message": "Connected", "worker": worker_info}
             except Exception as e:

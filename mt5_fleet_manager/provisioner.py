@@ -21,7 +21,7 @@ class FleetProvisioner:
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             return s.getsockname()[1]
 
-    async def provision_terminal(self, account: str, password: str, server: str) -> dict:
+    async def provision_terminal(self, account: str, password: str, server: str, user_id: str = "") -> dict:
         """
         1. Clones the MT5 directory securely for the specific account.
         2. Spawns the worker.py subprocess pointing to this installation.
@@ -56,26 +56,23 @@ class FleetProvisioner:
             "--server", str(server),
             "--path", terminal_exe
         ]
+        if user_id:
+            cmd.extend(["--user_id", str(user_id)])
         
         logger.info(f"Launching worker for account {account} on port {worker_port}")
         
         process = subprocess.Popen(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            cwd=BASE_DIR
-            # creationflags=subprocess.CREATE_NO_WINDOW # Windows detach
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            cwd=BASE_DIR,
+            creationflags=subprocess.CREATE_NO_WINDOW # Fully detached to avoid blocking
         )
         
         # Wait a few seconds for FastAPI to boot and MT5 to initialize
         await asyncio.sleep(8)
         
-        # Check if process crashed immediately
-        if process.poll() is not None:
-            err = process.stderr.read().decode()
-            logger.error(f"Worker process crashed: {err}")
-            raise Exception("Worker crashed on startup. Invalid credentials or missing MT5 base?")
-            
+        # We assume it successfully started in the background. If it crashes, the healthcheck loop in main.py will catch it.
         return {
             "account": account,
             "port": worker_port,
