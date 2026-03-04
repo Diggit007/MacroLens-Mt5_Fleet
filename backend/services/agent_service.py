@@ -810,6 +810,14 @@ YOUR TASK:
             - Use the Context Data to support your answer, but DO NOT restrict yourself to it. Use your full thinking capacity, reasoning, and training data to provide a comprehensive response.
             - Explain the reasoning behind your conclusions in 2 to 3 short paragraphs.
             - If suggesting an action, do NOT output a JSON signal, just give advice text.
+            
+            FORMATTING RULES (VERY IMPORTANT):
+            - Structure your response using clear section headers with bold text (e.g. **Macro Overview**, **EUR/USD**, **Gold (XAU/USD)**).
+            - For multi-asset scans, break down each asset into its own section with a bold header.
+            - Use bullet points (•) to list key observations, levels, and actionable insights.
+            - Keep paragraphs short (2-3 sentences max per point).
+            - End with a brief **Summary** or **Conclusion** section highlighting the top opportunities.
+            - Do NOT write a single long wall of text. The output must be visually scannable and easy to read.
             """
             
             # --- 4. LLM Call (Standard) ---
