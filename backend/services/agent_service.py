@@ -905,7 +905,9 @@ YOUR TASK:
             }
 
         except Exception as e:
-            logger.error(f"Agent Chat Error: {e}")
+            import traceback
+            tb = traceback.format_exc()
+            logger.error(f"Agent Chat Error: {e}\n{tb}")
             return {
                 "text": f"System Error: {str(e)}\n(Please check backend logs)",
                 "agent": "SYSTEM"
