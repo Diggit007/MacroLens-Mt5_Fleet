@@ -546,9 +546,9 @@ YOUR TASK:
         """
         try:
             # --- 1. Intent Detection & ACCESS CONTROL ---
-            # --- 1. Intent Detection & ACCESS CONTROL ---
             # [ENTERPRISE] Trial Logic REMOVED per user request
             
+            context_block = ""
             query_upper = user_query.upper()
 
             query_upper = user_query.upper()
@@ -610,7 +610,6 @@ YOUR TASK:
                         context_block += "\n[MACRO SCAN ERROR] Could not run divergence scan.\n"
             
             # --- 2. Context Gathering (The Knowledge Graph) ---
-            context_block = ""
             
             # [NEW] COGNITIVE ENGINE CONTEXT (The Subconscious)
             try:
@@ -808,8 +807,8 @@ YOUR TASK:
             INSTRUCTIONS:
             - Answer as your Persona ({agent_identity}).
             - The user is asking about {found_symbol if found_symbol else "the market"}. Focus your analysis on this specific request.
-            - Use the Context Data to support your answer.
-            - Keep it under 3 sentences. Be direct.
+            - Use the Context Data to support your answer, but DO NOT restrict yourself to it. Use your full thinking capacity, reasoning, and training data to provide a comprehensive response.
+            - Explain the reasoning behind your conclusions in 2 to 3 short paragraphs.
             - If suggesting an action, do NOT output a JSON signal, just give advice text.
             """
             

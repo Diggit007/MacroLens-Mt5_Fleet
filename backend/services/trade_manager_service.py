@@ -408,9 +408,19 @@ class TradeManagerService:
                         # Execute if autonomous and allowed
                         if settings.autonomous and recommendation.action != TradeAction.HOLD:
                             if recommendation.action.value in settings.allowed_actions:
-                                if recommendation.confidence >= settings.min_confidence:
+                                is_risk_action = recommendation.action in [
+                                    TradeAction.MOVE_SL_BREAKEVEN,
+                                    TradeAction.TRAIL_SL,
+                                    TradeAction.TIGHTEN_SL,
+                                    TradeAction.WIDEN_SL,
+                                    TradeAction.EXTEND_TP
+                                ]
+                                
+                                if is_risk_action or recommendation.confidence >= settings.min_confidence:
                                     await self._execute_action(user_id, account_id, recommendation)
-                                    world_state.add_log("Trade Manager", f"DEBUG: [Evaluator] EXECUTED {recommendation.action.value.upper()} on {pos_symbol}", "INFO")
+                                    world_state.add_log("Trade Manager", f"DEBUG: [Evaluator] EXECUTED {recommendation.action.value.upper()} on {pos_symbol} (Risk Override: {is_risk_action}, Confidence: {recommendation.confidence}%)", "INFO")
+                                else:
+                                    world_state.add_log("Trade Manager", f"DEBUG: [Evaluator] SKIPPED {recommendation.action.value.upper()} on {pos_symbol} (Confidence {recommendation.confidence}% < {settings.min_confidence}%)", "WARNING")
                     else:
                         world_state.add_log("Trade Manager", f"DEBUG: [Evaluator] No recommendation generated for {pos_symbol} (returned None).", "WARNING")
                 except Exception as pos_e:
