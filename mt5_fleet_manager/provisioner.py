@@ -48,8 +48,9 @@ class FleetProvisioner:
         # 3. Spawn Python Worker Subprocess
         # Launch worker.py and detach it
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        import sys
         cmd = [
-            "python", os.path.join(BASE_DIR, "worker.py"),
+            sys.executable, os.path.join(BASE_DIR, "worker.py"),
             "--port", str(worker_port),
             "--account", str(account),
             "--password", str(password),
