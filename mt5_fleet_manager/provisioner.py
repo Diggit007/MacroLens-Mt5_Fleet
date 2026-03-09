@@ -38,6 +38,12 @@ class FleetProvisioner:
             # Use shutil to copytree, ignoring large log folders if necessary
             shutil.copytree(self.base_mt5_path, instance_path, ignore=shutil.ignore_patterns('logs*', 'tester*'))
             
+            # Clear default charts to prevent invalid symbol errors at boot
+            default_profile = os.path.join(instance_path, "Profiles", "Charts", "Default")
+            if os.path.exists(default_profile):
+                shutil.rmtree(default_profile, ignore_errors=True)
+                os.makedirs(default_profile, exist_ok=True)
+            
             # Inject a blank config to ensure portable mode (though we pass portable flag anyway)
             with open(os.path.join(instance_path, "origin.txt"), "w") as f:
                  f.write(f"Provisioned for {account} via Fleet Manager")
