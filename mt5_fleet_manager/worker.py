@@ -350,19 +350,39 @@ async def get_orders():
     return [o._asdict() for o in orders]
 
 def resolve_symbol_local(target: str) -> str:
-    """Maps generic symbol (e.g. EURUSD) to broker-specific (e.g. EURUSDx)"""
+    """Maps generic symbol (e.g. EURUSD) to broker-specific tradeable symbol (e.g. EURUSD+)"""
     if not target:
         return target
     clean = target.replace("/", "").upper()
     symbols = mt5.symbols_get()
     if not symbols:
         return clean
-    for s in symbols:
-        if s.name == clean:
-            return s.name
+
+    matches = []
     for s in symbols:
         if clean in s.name and len(s.name) <= len(clean) + 4:
-            return s.name
+            is_exact = (s.name == clean)
+            trade_mode = getattr(s, 'trade_mode', 0)
+            
+            score = 0
+            if trade_mode == mt5.SYMBOL_TRADE_MODE_FULL:
+                score += 10
+            elif trade_mode != mt5.SYMBOL_TRADE_MODE_DISABLED:
+                score += 5
+                
+            if is_exact:
+                score += 2
+                
+            penalty = len(s.name) - len(clean)
+            final_score = score - (penalty * 0.1)
+            matches.append((final_score, s.name))
+            
+    if matches:
+        matches.sort(reverse=True, key=lambda x: x[0])
+        best_match = matches[0][1]
+        mt5.symbol_select(best_match, True)
+        return best_match
+        
     return clean
 
 def get_filling_mode(symbol: str) -> int:
@@ -482,7 +502,8 @@ async def get_symbols():
     check_mt5()
     symbols = mt5.symbols_get()
     if not symbols: return []
-    return [s.name for s in symbols]
+    # Filter out disabled symbols so the Frontend doesn't show them
+    return [s.name for s in symbols if getattr(s, 'trade_mode', 0) != mt5.SYMBOL_TRADE_MODE_DISABLED]
 
 @app.get("/symbol/{symbol}")
 async def get_symbol_info(symbol: str):
