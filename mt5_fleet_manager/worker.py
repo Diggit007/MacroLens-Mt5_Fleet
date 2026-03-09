@@ -267,6 +267,41 @@ async def lifespan(app: FastAPI):
             logger.info(f"MT5 Login Success for {args.account} on {args.server}")
             MT5_READY = True
             
+            # --- DYNAMIC EA CHART INJECTION ---
+            # Generate the correct chart with tradeable symbol and MacroLens_Execution EA attached
+            profile_path = os.path.join(os.path.dirname(args.path), "Profiles", "Charts", "Default")
+            chart_file = os.path.join(profile_path, "chart01.chr")
+            
+            if not os.path.exists(chart_file):
+                valid_symbol = resolve_symbol_local("EURUSD")
+                logger.info(f"Generating dynamic EA chart for {valid_symbol}...")
+                os.makedirs(profile_path, exist_ok=True)
+                with open(chart_file, "w") as f:
+                    f.write("<chart>\n")
+                    f.write("id=133713371337\n")
+                    f.write(f"symbol={valid_symbol}\n")
+                    f.write("period=16385\n")
+                    f.write("<expert>\n")
+                    f.write("name=MacroLens_Execution\n")
+                    f.write("flags=339\n")
+                    f.write("window_num=0\n")
+                    f.write("</expert>\n")
+                    f.write("</chart>\n")
+                
+                logger.info("Restarting terminal to apply the new Chart profile...")
+                mt5.shutdown()
+                _time.sleep(2)
+                
+                # Re-initialize to load the new chart profile
+                mt5.initialize(
+                    path=args.path,
+                    login=args.account,
+                    password=args.password,
+                    server=args.server,
+                    portable=True,
+                    timeout=120000
+                )
+                
             # 3. Minimize the GUI to save system rendering resources!
             try:
                 import ctypes
