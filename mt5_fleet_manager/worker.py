@@ -365,6 +365,18 @@ def resolve_symbol_local(target: str) -> str:
             return s.name
     return clean
 
+def get_filling_mode(symbol: str) -> int:
+    symbol_info = mt5.symbol_info(symbol)
+    if not symbol_info:
+        return mt5.ORDER_FILLING_IOC
+    filling_mode = symbol_info.filling_mode
+    if filling_mode & mt5.SYMBOL_FILLING_FOK:
+        return mt5.ORDER_FILLING_FOK
+    elif filling_mode & mt5.SYMBOL_FILLING_IOC:
+        return mt5.ORDER_FILLING_IOC
+    else:
+        return mt5.ORDER_FILLING_RETURN
+
 @app.post("/execute")
 async def execute_trade(req: Request):
     """
@@ -401,7 +413,7 @@ async def execute_trade(req: Request):
             "magic": 1001,
             "comment": body.get("comment", ""),
             "type_time": mt5.ORDER_TIME_GTC,
-            "type_filling": mt5.ORDER_FILLING_IOC,
+            "type_filling": get_filling_mode(symbol),
         }
         
         result = mt5.order_send(request)
@@ -430,7 +442,7 @@ async def execute_trade(req: Request):
             "deviation": 20,
             "magic": 1001,
             "type_time": mt5.ORDER_TIME_GTC,
-            "type_filling": mt5.ORDER_FILLING_IOC,
+            "type_filling": get_filling_mode(p.symbol),
         }
         result = mt5.order_send(request)
         if result.retcode != mt5.TRADE_RETCODE_DONE:
